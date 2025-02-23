@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Intron-Admin</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/styles.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="app">
+    <header class="">
+      <div class="header --z-index-1 mb-3">
+          <nav class="navbar position-relative navbar-expand-lg bg-white shadow-sm">
+              <a href="#" class="navbar-bar sidebar-toggle" id="sidebar-toggle"><img src="../img/toggle_bar.svg"
+                      alt="" /></a>
+              <a class="navbar-brand" href="#">
+                  <img src="../img/logo_mark_dark_alt_big.png" alt="" />
+              </a>
+
+              <div class="
+          top-search-wrap
+          position-relative
+          mr-auto
+          d-none d-md-block
+        ">
+                  <a href="javascript:void(0);" class="position-absolute h-100 d-flex" style="
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 2px;
+          ">
+                      <img src="../img/search-icon.png" alt="" />
+                  </a>
+                  <div class="form-group m-0 --border-radius-50">
+                      <input type="text" class="form-control --border-radius-50"
+                          style="padding-right: 60px; height: 40px !important" id="input-field"
+                          placeholder="Search.." />
+                  </div>
+              </div>
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav align-items-lg-center ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              <div class="d-flex align-items-center">
+                                  <img src="../img/philip.png" alt="" />
+                                  <p class="d-lg-none">Philip</p>
+                              </div>
+                          </a>
+                          <a href="javascript:void(0);" class="d-lg-none">
+                              <i class="fa fa-chevron-right"></i>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-15">
+                              <i class="fas fa-print mr-2"></i>
+                              Take a print
+                          </a>
+                          <a href="javascript:void(0);" class="icon d-lg-none">
+                              <i class="fa fa-chevron-right"></i>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="javascript:void(0);" class="btn --small-btn --btn-orange --border-radius-15">
+                              <i class="fas fa-sign-out-alt mr-2"></i>
+                              Logout
+                          </a>
+                          <a href="javascript:void(0);" class="icon d-lg-none">
+                              <i class="fa fa-chevron-right"></i>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </header>
+  <aside class="sidebar shadow-sm --border-tr-radius-35">
+      <div class="fixed-aside-container">
+          <div class="fixed-aside-container__wrapper">
+              <ul class="sidebar-nav">
+                  <li>
+                      <a href="./index.html">
+                          <i class="fas fa-cog"></i>
+                          Index</a>
+                  </li>
+                  <li class="active">
+                      <a href="#adminSubmenu" data-toggle="collapse" aria-expanded="false"
+                          class="dropdown-toggle collapsed sidebar_dropdown">
+                          <i class="fas fa-user-lock"></i>
+                          Components
+                      </a>
+                      <ul class="list-unstyled collapse" id="adminSubmenu">
+                          <li><a href="./form.html">Forms</a></li>
+                          <li><a href="./dropdown.html">Drop Down</a></li>
+                          <li><a href="./tables.html">Tables</a></li>
+                          <li><a href="./stats_board.html">Stats Board</a></li>
+                          <li><a href="./checkout.html">Check Out</a></li>
+                          <li><a href="./payment_method.html">Payment Method</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#accountSubmenu" data-toggle="collapse" aria-expanded="false"
+                          class="dropdown-toggle collapsed sidebar_dropdown">
+                          <i class="far fa-user"></i>
+                          Accounts
+                      </a>
+                      <ul class="list-unstyled collapse" id="accountSubmenu">
+                          <li><a href="#">Accounts option</a></li>
+                          <li><a href="#">Accounts option</a></li>
+                          <li><a href="#">Accounts option</a></li>
+                      </ul>
+                  </li>
+
+                  <li>
+                      <a href="#">
+                          <i class="fas fa-user"></i>
+                          Profile
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="fas fa-envelope"></i>
+                          Inbox
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="fas fa-file-alt"></i>
+                          Work list
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="far fa-chart-bar"></i>
+                          Stats
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="fas fa-clock"></i>
+                          History
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="fas fa-star"></i>
+                          Feedback
+                      </a>
+                  </li>
+              </ul>
+              <a href="" class="btn nav_btn d-md-none">
+                  <img src="img/print_icon.png" alt="print" />
+                  Take a print
+              </a>
+              <a href="" class="btn nav_btn logout_btn d-md-none">
+                  <img src="img/logout_icon.png" alt="logout" />
+                  Logout
+              </a>
+          </div>
+      </div>
+  </aside>
+    <main>
+
+      <section class="section mt-5">
+        <div class="section__heading">
+          <h3 class="section__heading-title --fs-32 --fw-500 --f-poppins">
+            Payments
+          </h3>
+          <div class="d-flex justify-content-center justify-content-md-end">
+            <div class="d-flex align-items-center">
+              <a href="javascript:void(0);" class="
+                    btn
+                    --small-btn
+                    -bg-white
+                    --c-primary
+                    --border-radius-5
+                    --bg-white
+                    justify-content-between
+                  ">
+                <span>
+                  <i class="fa fa-calendar mr-2"></i>
+                  06/29/1968
+                </span>
+                <span class="--c-turquoise-dark ml-3"><i class="fa fa-chevron-down"></i></span>
+              </a>
+              <div class="ml-3">
+                <a href="javascript:void(0);" class="
+                      btn
+                      --small-btn
+                      text-white
+                      --bg-orange-sharp
+                      --border-radius-5
+                    ">
+                  <i class="fas fa-file-excel mr-2"></i>
+                  Export to Excel
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- payment main section -->
+        <section class="payment_wrapper complaients_wrapper">
+          <div>
+            <ul class="nav nav-tabs complaints__menu  desktop_tabs  TabHover-active" id="myTab"
+              role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active ml-0" id="transaction-tab" data-toggle="tab" href="#transaction" role="tab"
+                  aria-controls="transaction" aria-selected="true">
+                  <!-- <i class="fas fa-exchange-alt turquoise-icon"></i> -->
+                  <i class="turquoise-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.414" viewBox="0 0 16 15.414">
+                      <path id="bx-transfer-alt"
+                        d="M19.924,10.383a1,1,0,0,0-.217-1.09l-5-5L13.293,5.707,16.586,9H4v2H19A1,1,0,0,0,19.924,10.383ZM4.076,13.617a1,1,0,0,0,.217,1.09l5,5,1.414-1.414L7.414,15H20V13H5A1,1,0,0,0,4.076,13.617Z"
+                        transform="translate(-4 -4.293)" fill="#41ccc9" />
+                    </svg>
+
+                  </i>
+
+                  Transactions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="summary-tab" data-toggle="tab" href="#summary" role="tab"
+                  aria-controls="summary" aria-selected="true">
+                  <!-- <i class="fas fa-file-alt turquoise-icon"></i> -->
+                  <i class="turquoise-icon">
+                    <svg id="Page-1" xmlns="http://www.w3.org/2000/svg" width="15.601" height="19.201"
+                      viewBox="0 0 15.601 19.201">
+                      <g id="Icon-Set-Filled">
+                        <path id="text-document"
+                          d="M117,105.8a1.2,1.2,0,0,1-1.2-1.2v-2.4l3.6,3.6Zm-.6,6h-7.2a.6.6,0,1,1,0-1.2h7.2a.6.6,0,1,1,0,1.2Zm0,3.6h-7.2a.6.6,0,1,1,0-1.2h7.2a.6.6,0,1,1,0,1.2Zm-.6-14.384L107.4,101a2.4,2.4,0,0,0-2.4,2.4v14.4a2.4,2.4,0,0,0,2.4,2.4h10.8a2.4,2.4,0,0,0,2.4-2.4v-12l-4.8-4.783Z"
+                          transform="translate(-105 -101)" fill="#41ccc9" fill-rule="evenodd" />
+                      </g>
+                    </svg>
+                  </i>
+                  Orders Payment Summary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="paymentDetail-tab" data-toggle="tab" href="#paymentDetail" role="tab"
+                  aria-controls="paymentDetail" aria-selected="false">
+                  <!-- <i class="fas fa-file-alt turquoise-icon"></i> -->
+                  <i class="turquoise-icon">
+                    <svg id="Page-1" xmlns="http://www.w3.org/2000/svg" width="15.601" height="19.201"
+                      viewBox="0 0 15.601 19.201">
+                      <g id="Icon-Set-Filled">
+                        <path id="text-document"
+                          d="M117,105.8a1.2,1.2,0,0,1-1.2-1.2v-2.4l3.6,3.6Zm-.6,6h-7.2a.6.6,0,1,1,0-1.2h7.2a.6.6,0,1,1,0,1.2Zm0,3.6h-7.2a.6.6,0,1,1,0-1.2h7.2a.6.6,0,1,1,0,1.2Zm-.6-14.384L107.4,101a2.4,2.4,0,0,0-2.4,2.4v14.4a2.4,2.4,0,0,0,2.4,2.4h10.8a2.4,2.4,0,0,0,2.4-2.4v-12l-4.8-4.783Z"
+                          transform="translate(-105 -101)" fill="#41ccc9" fill-rule="evenodd" />
+                      </g>
+                    </svg>
+                  </i>
+                  Orders Payment Details</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- tab content starts -->
+          <div class="tab-content" id="complaintTabContent">
+            <!-- transacton tab -->
+            <div class="tab-pane fade show active" id="transaction" role="tabpanel" aria-labelledby="transaction-tab">
+              <div class="intron-table intron-table__payments">
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>
+                          <div>Order(s)</div>
+                        </th>
+                        <th>
+                          <div>Amount <span>$5,850.00</span></div>
+                        </th>
+                        <th>
+                          <div>Hospital Share <span>$5,557.50</span></div>
+                        </th>
+                        <th>
+                          <div>Intron Share<span>
+                              $292.50 + $0.00</span></div>
+                        </th>
+                        <th>
+                          <div>Transaction<span>
+                              $0.00</span></div>
+                        </th>
+                        <th>
+                          <div>Agent fee</div>
+                        </th>
+                        <th>
+                          <div>Channel</div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Appointment</td>
+                        <td class="bold">$1500.0</td>
+                        <td>$1425.0</td>
+                        <td>$75.0</td>
+                        <td>Transact-1</td>
+                        <td>$0.0</td>
+                        <td>Cash</td>
+                      </tr>
+                      <tr>
+                        <td>Appointment</td>
+                        <td class="bold">$1500.0</td>
+                        <td>$1425.0</td>
+                        <td>$75.0</td>
+                        <td>Transact-1</td>
+                        <td>$0.0</td>
+                        <td>Cash</td>
+                      </tr>
+                      <tr>
+                        <td>Appointment</td>
+                        <td class="bold">$1500.0</td>
+                        <td>$1425.0</td>
+                        <td>$75.0</td>
+                        <td>Transact-1</td>
+                        <td>$0.0</td>
+                        <td>Cash</td>
+                      </tr>
+                      <tr>
+                        <td>Appointment</td>
+                        <td class="bold">$1500.0</td>
+                        <td>$1425.0</td>
+                        <td>$75.0</td>
+                        <td>Transact-1</td>
+                        <td>$0.0</td>
+                        <td>Cash</td>
+                      </tr>
+                      <tr>
+                        <td>Appointment</td>
+                        <td class="bold">$1500.0</td>
+                        <td>$1425.0</td>
+                        <td>$75.0</td>
+                        <td>Transact-1</td>
+                        <td>$0.0</td>
+                        <td>Cash</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- summary tab -->
+            <div class="tab-pane fade" id="summary" role="tabpanel" aria-labelledby="summary-tab">
+              <section class="summary_main intron-shadow">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="summaryBox box_mb">
+                      <h4>$5,850.00</h4>
+                      <h6>Total Payments</h6>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="summaryBox summaryBox_middle box_mb">
+                      <h4>$ 5,557.50</h4>
+                      <h6>Total Hospital Share</h6>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="summaryBox box_mb">
+                      <h4 class="orange-sharp">$ 292.50 + 0.00</h4>
+                      <h6>Total Intron Share</h6>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="summaryBox box_mt">
+                      <h4>$5,850.00</h4>
+                      <h6>Total Cach Payments</h6>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="summaryBox summaryBox_middle box_mt">
+                      <h4>$ 0.00</h4>
+                      <h6>Total Electronic Payments</h6>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="summaryBox box_mt">
+                      <h4 class="orange-sharp">$ 0.00</h4>
+                      <h6>Total Insurance Payment</h6>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- patient box wrapper -->
+              <section class="patient_wrapper">
+                <div class="row">
+                  <div class="col-xl-4 col-md-6">
+                    <div class="patientBox intron-shadow">
+                      <div class="patientBox_head">
+                        <div class="patient_time">
+                          18/06/2022, 03:28 PM
+                        </div>
+                        <h2 class="patient_name">Patient Name: <span>Jossy Kingston</span></h2>
+                      </div>
+
+                      <div class="patientBox_body">
+
+                        <div class="patient_info">
+                          <h6>Clinical:</h6>
+                          <p>Injection_Appointment Unit</p>
+                        </div>
+                        <div class="patient_info">
+                          <h6>Payment Channel:</h6>
+                          <p>Cash</p>
+                        </div>
+                        <div class="patient_info">
+                          <h6>Split Type:</h6>
+                          <p class="link-dark">Site-Percentage, 5.0%</p>
+                        </div>
+
+                        <div class="amount_container">
+                          <div class="patient_amount">
+                            <h5>$ 1500.00</h5>
+                            <h6>Amount</h6>
+                          </div>
+                          <div class="patient_share">
+                            <h5>$ 1425.00</h5>
+                            <h6>Hospital Share</h6>
+                          </div>
+                          <div class="patient_intron">
+                            <h5>$ 75.00</h5>
+                            <h6>Intron Share</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="patientBox intron-shadow">
+                      <div class="patientBox_head">
+                        <div class="patient_time">
+                          18/06/2022, 03:28 PM
+                        </div>
+                        <h2 class="patient_name">Patient Name: <span>Jossy Kingston</span></h2>
+                      </div>
+
+                      <div class="patientBox_body">
+
+                        <div class="patient_info">
+                          <h6>Clinical:</h6>
+                          <p>Injection_Appointment Unit</p>
+                        </div>
+                        <div class="patient_info">
+                          <h6>Payment Channel:</h6>
+                          <p>Cash</p>
+                        </div>
+                        <div class="patient_info">
+                          <h6>Split Type:</h6>
+                          <p class="link-dark">Site-Percentage, 5.0%</p>
+                        </div>
+
+                        <div class="amount_container">
+                          <div class="patient_amount">
+                            <h5>$ 1500.00</h5>
+                            <h6>Amount</h6>
+                          </div>
+                          <div class="patient_share">
+                            <h5>$ 1425.00</h5>
+                            <h6>Hospital Share</h6>
+                          </div>
+                          <div class="patient_intron">
+                            <h5>$ 75.00</h5>
+                            <h6>Intron Share</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="patientBox intron-shadow">
+                      <div class="patientBox_head">
+                        <div class="patient_time">
+                          18/06/2022, 03:28 PM
+                        </div>
+                        <h2 class="patient_name">Patient Name: <span>Jossy Kingston</span></h2>
+                      </div>
+
+                      <div class="patientBox_body">
+
+                        <div class="patient_info">
+                          <h6>Clinical:</h6>
+                          <p>Injection_Appointment Unit</p>
+                        </div>
+                        <div class="patient_info">
+                          <h6>Payment Channel:</h6>
+                          <p>Cash</p>
+                        </div>
+                        <div class="patient_info">
+                          <h6>Split Type:</h6>
+                          <p class="link-dark">Site-Percentage, 5.0%</p>
+                        </div>
+
+                        <div class="amount_container">
+                          <div class="patient_amount">
+                            <h5>$ 1500.00</h5>
+                            <h6>Amount</h6>
+                          </div>
+                          <div class="patient_share">
+                            <h5>$ 1425.00</h5>
+                            <h6>Hospital Share</h6>
+                          </div>
+                          <div class="patient_intron">
+                            <h5>$ 75.00</h5>
+                            <h6>Intron Share</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="patientBox intron-shadow">
+                      <div class="patientBox_head">
+                        <div class="patient_time">
+                          18/06/2022, 03:28 PM
+                        </div>
+                        <h2 class="patient_name">Patient Name: <span>Jossy Kingston</span></h2>
+                      </div>
+
+                      <div class="patientBox_body">
+
+                        <div class="patient_info">
+                          <h6>Clinical:</h6>
+                          <p>Injection_Appointment Unit</p>
+                        </div>
+                        <div class="patient_info">
+                          <h6>Payment Channel:</h6>
+                          <p>Cash</p>
+                        </div>
+                        <div class="patient_info">
+                          <h6>Split Type:</h6>
+                          <p class="link-dark">Site-Percentage, 5.0%</p>
+                        </div>
+
+                        <div class="amount_container">
+                          <div class="patient_amount">
+                            <h5>$ 1500.00</h5>
+                            <h6>Amount</h6>
+                          </div>
+                          <div class="patient_share">
+                            <h5>$ 1425.00</h5>
+                            <h6>Hospital Share</h6>
+                          </div>
+                          <div class="patient_intron">
+                            <h5>$ 75.00</h5>
+                            <h6>Intron Share</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="patientBox intron-shadow">
+                      <div class="patientBox_head">
+                        <div class="patient_time">
+                          18/06/2022, 03:28 PM
+                        </div>
+                        <h2 class="patient_name">Patient Name: <span>Jossy Kingston</span></h2>
+                      </div>
+
+                      <div class="patientBox_body">
+
+                        <div class="patient_info">
+                          <h6>Clinical:</h6>
+                          <p>Injection_Appointment Unit</p>
+                        </div>
+                        <div class="patient_info">
+                          <h6>Payment Channel:</h6>
+                          <p>Cash</p>
+                        </div>
+                        <div class="patient_info">
+                          <h6>Split Type:</h6>
+                          <p class="link-dark">Site-Percentage, 5.0%</p>
+                        </div>
+
+                        <div class="amount_container">
+                          <div class="patient_amount">
+                            <h5>$ 1500.00</h5>
+                            <h6>Amount</h6>
+                          </div>
+                          <div class="patient_share">
+                            <h5>$ 1425.00</h5>
+                            <h6>Hospital Share</h6>
+                          </div>
+                          <div class="patient_intron">
+                            <h5>$ 75.00</h5>
+                            <h6>Intron Share</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="patientBox intron-shadow">
+                      <div class="patientBox_head">
+                        <div class="patient_time">
+                          18/06/2022, 03:28 PM
+                        </div>
+                        <h2 class="patient_name">Patient Name: <span>Jossy Kingston</span></h2>
+                      </div>
+
+                      <div class="patientBox_body">
+
+                        <div class="patient_info">
+                          <h6>Clinical:</h6>
+                          <p>Injection_Appointment Unit</p>
+                        </div>
+                        <div class="patient_info">
+                          <h6>Payment Channel:</h6>
+                          <p>Cash</p>
+                        </div>
+                        <div class="patient_info">
+                          <h6>Split Type:</h6>
+                          <p class="link-dark">Site-Percentage, 5.0%</p>
+                        </div>
+
+                        <div class="amount_container">
+                          <div class="patient_amount">
+                            <h5>$ 1500.00</h5>
+                            <h6>Amount</h6>
+                          </div>
+                          <div class="patient_share">
+                            <h5>$ 1425.00</h5>
+                            <h6>Hospital Share</h6>
+                          </div>
+                          <div class="patient_intron">
+                            <h5>$ 75.00</h5>
+                            <h6>Intron Share</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </section>
+
+
+            </div>
+            <!--  -->
+            <div class="tab-pane fade" id="paymentDetail" role="tabpanel" aria-labelledby="paymentDetail-tab">
+              
+            </div>
+
+
+          </div>
+
+
+        </section>
+
+
+      </section>
+
+      <!-- <div class="--shadow --border-radius-20 bg-white">
+          <div class="--border-bl-radius-20 --border-br-radius-20 p-2"> -->
+    </main>
+    <footer>
+      <p>footer</p>
+    </footer>
+  </div>
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+$font-famliy: "Poppins";
+// FONT
+$default-font-size: 1.6rem;
+
+$--primary: #45408f;
+$--primary-lighter: #855cff;
+$--primary-pink-lighter: #552a5a;
+$--primary-light: #e7e1fe;
+$--secondary: #a8cf45;
+$--primary-transparent: #47337b80;
+$--secondary-transparent: #a8cf4580;
+$--orange: #ff5757;
+$--orange-light: #f9e8e0;
+$--orange-sharp: #ff8a3b;
+$--orange-lighter: #F8E7DF;
+$--turquoise: #b7f6ea;
+$--turquoise-light: #dcf2f5;
+$--turquoise-dark: #41ccc9;
+$--pink-light: #FFE1E1;
+$--link: #4a77ae;
+$--link-dark: #47337b;
+$--link-light: #F0E8FE;
+$--yellow:#FFCC41;
+$--purple:#C287FF;
+$--red:#FB745B;
+$--zink: #40DBBC;
+$--btn-gradient-to-right: linear-gradient(to right, $--link, $--link-dark);
+$--btn-gradient-to-left: linear-gradient(to left, $--link, $--turquoise-dark);
+$--btn-gradient-to-bottom: linear-gradient(to bottom, $--link-dark, #44559a);
+$--light-grey:rgb(235, 236, 240);
+
+$--text: #717171;
+$--background: #f9fafe;
+$--light: #fcffff;
+$--shadow: rgba(170, 170, 170, 0.1);
+$--dull: #333333;
+$--dull-dark: #a2a6ba;
+$--white-opaque: #ffffff15;
+$--nav-search-bar: #47337b0a;
+$--border: rgba($--dull, 0.2);
+$--nav-search-bar-text: rgba($--dull, 0.8);

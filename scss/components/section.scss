@@ -1,0 +1,44 @@
+.section {
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    &-title {
+      font-size: 3.2rem;
+      line-height: 4.3rem;
+      font-weight: 600;
+      color: var(--dull);
+    }
+    &-breadcrumb {
+      font-size: 1.8rem;
+      line-height: 3.1rem;
+      font-weight: 400;
+      color: var(--link-dark);
+      span {
+        color: var(--dull-dark);
+      }
+    }
+  }
+  @include respond(tab-port) {
+    &__heading {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &-title {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+      }
+    }
+  }
+
+  &__heading--row{
+    flex-direction: row;
+    .section__heading-title {
+      font-size: 20px !important;
+  }
+  }
+
+}

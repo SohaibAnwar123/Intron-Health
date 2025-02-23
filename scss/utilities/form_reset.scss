@@ -1,0 +1,113 @@
+// Form styles
+label {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  color: var(--dull);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+input.form-control,
+select.form-control {
+  height: calc(4rem + 0.2rem);
+}
+
+input.form-control,
+select.form-control {
+  border-radius: 0.3rem;
+  padding-left: 1.2rem;
+}
+
+.form-control {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 0.5;
+}
+
+.input-group,
+.form-group {
+  margin-bottom: 2.2rem;
+}
+
+select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="rgb(65, 204, 201)" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" /></svg>');
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+}
+
+.form-control:focus,
+.custom-control-input:focus,
+.btn:focus,
+.--big-btn:focus,
+.--small-btn:focus,
+.--large-btn:focus {
+  box-shadow: 0rem 0rem 0.2rem 0.2rem var(--turquoise) !important;
+  border-color: var(--turquoise) !important;
+}
+
+/* The container */
+.radio-wrap {
+  display: inline-block;
+  position: relative;
+  padding-left: 3.5rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    left: -0rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+    z-index: 1;
+    /* When the radio button is checked, add a blue background */
+    &:checked ~ .checkmark {
+      background-color: var(--turquoise-dark);
+      /* Show the indicator (dot/circle) when checked */
+      &:after {
+        display: block;
+      }
+    }
+  }
+  /* On mouse-over, add a grey background color */
+  &:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* Style the indicator (dot/circle) */
+  .checkmark:after {
+    top: 0.7rem;
+    left: 0.7rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: white;
+  }
+
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    left: 0;
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: #eee;
+    border-radius: 50%;
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Intron-Admin</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="app">
+      <header class="">
+        <div class="header --z-index-1 mb-3">
+          <nav
+            class="navbar position-relative navbar-expand-lg bg-white shadow-sm"
+          >
+            <a href="#" class="navbar-bar sidebar-toggle" id="sidebar-toggle"
+              ><img src="../img/toggle_bar.svg" alt=""
+            /></a>
+            <a class="navbar-brand" href="#">
+              <img src="../img/logo_mark_dark_alt_big.png" alt="" />
+            </a>
+
+            <div
+              class="
+                top-search-wrap
+                position-relative
+                mr-auto
+                d-none d-md-block
+              "
+            >
+              <a
+                href="javascript:void(0);"
+                class="position-absolute h-100 d-flex"
+                style="
+                  right: -10px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  padding: 2px;
+                "
+              >
+                <img src="../img/search-icon.png" alt="" />
+              </a>
+              <div class="form-group m-0 --border-radius-50">
+                <input
+                  type="text"
+                  class="form-control --border-radius-50"
+                  style="padding-right: 60px; height: 40px !important"
+                  id="input-field"
+                  placeholder="Search.."
+                />
+              </div>
+            </div>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav align-items-lg-center ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="d-flex align-items-center">
+                      <img src="../img/philip.png" alt="" />
+                      <p class="d-lg-none">Philip</p>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0);" class="d-lg-none">
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="javascript:void(0);"
+                    class="btn --small-btn --btn-turqoise --border-radius-15"
+                  >
+                    <i class="fas fa-print mr-2"></i>
+                    Take a print
+                  </a>
+                  <a href="javascript:void(0);" class="icon d-lg-none">
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="javascript:void(0);"
+                    class="btn --small-btn --btn-orange --border-radius-15"
+                  >
+                    <i class="fas fa-sign-out-alt mr-2"></i>
+                    Logout
+                  </a>
+                  <a href="javascript:void(0);" class="icon d-lg-none">
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <aside class="sidebar shadow-sm --border-tr-radius-35">
+        <div class="fixed-aside-container">
+          <div class="fixed-aside-container__wrapper">
+            <ul class="sidebar-nav">
+              <li>
+                <a href="./index.html">
+                  <i class="fas fa-cog"></i>
+                  Index</a
+                >
+              </li>
+              <li class="active">
+                <a
+                  href="#adminSubmenu"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  class="dropdown-toggle collapsed sidebar_dropdown"
+                >
+                  <i class="fas fa-user-lock"></i>
+                  Components
+                </a>
+                <ul class="list-unstyled collapse" id="adminSubmenu">
+                  <li><a href="./form.html">Forms</a></li>
+                  <li><a href="./tables.html">Tables</a></li>
+                  <li><a href="./dropdown.html">Drop Down</a></li>
+                  <li><a href="./tables.html">Tables</a></li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#accountSubmenu"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  class="dropdown-toggle collapsed sidebar_dropdown"
+                >
+                  <i class="far fa-user"></i>
+                  Accounts
+                </a>
+                <ul class="list-unstyled collapse" id="accountSubmenu">
+                  <li><a href="#">Accounts option</a></li>
+                  <li><a href="#">Accounts option</a></li>
+                  <li><a href="#">Accounts option</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-user"></i>
+                  Profile
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-envelope"></i>
+                  Inbox
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-file-alt"></i>
+                  Work list
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="far fa-chart-bar"></i>
+                  Stats
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-clock"></i>
+                  History
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-star"></i>
+                  Feedback
+                </a>
+              </li>
+            </ul>
+            <a href="" class="btn nav_btn d-md-none">
+              <img src="img/print_icon.png" alt="print" />
+              Take a print
+            </a>
+            <a href="" class="btn nav_btn logout_btn d-md-none">
+              <img src="img/logout_icon.png" alt="logout" />
+              Logout
+            </a>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <div class="row">
+          <div class="col-12">
+            <div class="section">
+              <div class="section__heading">
+                <div>
+                  <h2 class="mb-0 section__heading-title">Profile</h2>
+                </div>
+
+                <div>
+                  <div class="dropdown settings_dropdown edit_dropdown show">
+                    <button
+                      type="button"
+                      class="btn dropdown-toggle shadow-sm"
+                      data-toggle="dropdown"
+                      aria-expanded="true"
+                    >
+                      Edit Profile
+                    </button>
+                    <div
+                      class="
+                        dropdown-menu dropdown-menu-triangle-b-r
+                        shadow
+                        show
+                      "
+                      x-placement="bottom-start"
+                      style="
+                        position: absolute;
+                        will-change: transform;
+                        transform: translate3d(-30px, 50px, 0px);
+                      "
+                    >
+                      <a class="dropdown-item active" href="#">Edit Profile</a>
+                      <a class="dropdown-item" href="#">Deactive</a>
+                      <a class="dropdown-item" href="#">Manage Premissions</a>
+                      <a class="dropdown-item" href="#">Transfer to site</a>
+                      <a
+                        class="dropdown-item"
+                        data-toggle="modal"
+                        data-target="#unitModel"
+                        >Manage Unit</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        data-toggle="modal"
+                        data-target="#passwordModel"
+                        >Manage Password</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- messages box -->
+            <div class="profile-wrapper shadow-sm">
+              <div class="patientinfobox doctorprofilebox">
+                <div class="text-center">
+                  <img
+                    src="../img/doctor_img.png"
+                    alt="doctor_img"
+                    class="img"
+                  />
+                  <h3 class="name">Pro. Betty Irabor</h3>
+                  <h6 class="title">Doctor</h6>
+                </div>
+
+                <div id="doctor_info" class="detail content">
+                  <div class="detail_mb info_1" >
+                    <h6 class="detail_title">Username</h6>
+                    <h5 class="detail_info">Irabor</h5>
+                  </div>
+
+                  <div class="details_mb info_2" >
+                    <h6 class="detail_title">Date of Birth</h6>
+                    <h5 class="detail_info">30/12/1970</h5>
+                  </div>
+
+                  <div class="details_mb info_3" >
+                    <h6 class="detail_title">Email</h6>
+                    <h5 class="detail_info">irabor20@intron.io</h5>
+                  </div>
+
+                  <div class="details_mb info_4" >
+                    <h6 class="detail_title">Address</h6>
+                    <h5 class="detail_info">3 Aare Avenue,1, Oyo</h5>
+                  </div>
+
+                  <div class="details_mb info_5" >
+                    <h6 class="detail_title">Patients seen</h6>
+                    <h5 class="detail_info">21</h5>
+                  </div>
+
+                  <div class="details_mb info_6" >
+                    <h6 class="detail_title">Total Orders</h6>
+                    <h5 class="detail_info">594</h5>
+                  </div>
+
+                  <div class="details_mb info_1" >
+                    <h6 class="detail_title">Joined</h6>
+                    <h5 class="detail_info">12/10/2019</h5>
+                  </div>
+
+                  <div class="details_mb info_2" >
+                    <h6 class="detail_title">Permissions</h6>
+                    <h5 class="detail_info">Doctor</h5>
+                  </div>
+
+                  <div class="details_mb info_3" >
+                    <h6 class="detail_title">Service Area</h6>
+                    <h5 class="detail_info">General Outpatient Clinic</h5>
+                  </div>
+
+                  <div class="details_mb info_4" >
+                    <h6 class="detail_title">Unit</h6>
+                    <h5 class="detail_info">Family Medicine</h5>
+                  </div>
+
+                  <div class="details_mb info_5" >
+                    <h6 class="detail_title">Specialty</h6>
+                    <h5 class="detail_info">Not Specified</h5>
+                  </div>
+                </div>
+
+                <div class="show_ml">
+                  <a class="btn btn-more ShowMore" style="display: none"
+                    >Show More</a
+                  >
+                  <a class="btn btn-more ShowLess" >Show less</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer><p>footer</p></footer>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".details_mb").hide();
+        $("#doctor_info").find(".details_mb:lt(6)").show();
+
+        $(".ShowMore").click(function (ev) {
+          $("#doctor_info").find(".details_mb").show();
+          $(this).hide();
+          $(".ShowLess").show();
+        });
+
+        $(".ShowLess").click(function (ev) {
+          $("#doctor_info").find(".details_mb").not(":lt(6)").hide();
+          $(this).hide();
+          $(".ShowMore").show();
+        });
+      });
+    </script>
+  </body>
+</html>

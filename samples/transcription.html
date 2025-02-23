@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Intron-Admin</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div id="app">
+        <header class="">
+            <div class="header --z-index-1 mb-3 trans_header">
+                <nav class="navbar position-relative navbar-expand bg-white shadow-sm">
+                   
+                    <a class="navbar-brand" href="#" id="trans_page_logo">
+                        <img src="../img/logo_mark_dark_alt_big.png" alt="" />
+                    </a>
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav align-items-lg-center ml-auto">
+                           
+                            <li class="nav-item">
+                                <a href="javascript:void(0);" class="btn --small-btn btn-gradient btn_history  --border-radius-15">
+                                    History
+                                </a>
+                               
+                            </li>
+                            <li class="nav-item">
+                                <div class="form-group mb-0 lang_select">
+                                    <select class="form-control" id="sel1" name="sellist1">
+                                        <option>English-USA</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="recording_main">
+            <section class="recording_wrapper">
+                <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="recording__inner " id="recording__inner--start">
+                        <div class="grid_img">
+                            <img src="../img/Repeat Grid 4.png" alt="Repeat Grid 4" class="w-100">
+                        </div>
+                        <div class="rec_button">
+                            <a  class="btn btn_rec btn_rec--start">
+                                <img src="../img/start_rec.png" alt="start_rec.png">
+                            </a>
+                            <p>Start recording to record speech</p>
+                        </div>
+                        </div>
+
+                        <!-- waiting -->
+                        <div class="recording__inner" id="recording__inner--waiting">
+                            <div class="grid_img">
+                                <img src="../img/Repeat Grid 4.png" alt="Repeat Grid 4" class="w-100">
+                            </div>
+                            <div class="rec_button">
+                                <a  class="btn btn_rec btn_rec--wait">
+                                    <img src="../img/trans_wait.png" alt="start_rec.png">
+                                </a>
+                                <p>Waiting</p>
+                            </div>
+                            </div>
+
+
+                        <!-- progress -->
+                        <div class="recording__inner" id="recording__inner--progress">
+                            <div class="grid_img">
+                                <img src="../img/progress_rec.png" alt="progress_rec.png" class="w-100">
+                            </div>
+                            <div class="rec_button">
+                                <a  class="btn btn_rec btn_rec--progress">
+                                    <img src="../img/progress_btn.png" alt="progress_btn.png">
+                                </a>
+                                <p>Recording in progress</p>
+                            </div>
+                        </div>
+
+                        <!-- stopped -->
+                        <div class="recording__inner" id="recording__inner--stopped">
+                            <div class="grid_img">
+                                <img src="../img/Repeat Grid 4.png" alt="Repeat Grid 4" class="w-100">
+                            </div>
+                            <div class="rec_button">
+                                <a  class="btn btn_rec btn_rec--stopped">
+                                    <img src="../img/start_rec.png" alt="start_rec.png">
+                                </a>
+                                <p>Recording Stopped</p>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center" >
+                    <div class="col-lg-8 col-md-10">
+                        <div class="form-group">
+                            <label for="input-field" class="mb-2">Transcription output</label>
+                            <textarea class="form-control --border-radius-5" rows="5" id="comment" placeholder="Write here.."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </main>
+        <footer>
+            <p>footer</p>
+        </footer>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+         $('.btn_rec--start').on('click', function () {
+            $('#recording__inner--start').hide();
+            $('#recording__inner--waiting').show();
+        });
+        $('.btn_rec--wait').on('click', function () {
+            $('#recording__inner--waiting').hide();
+            $('#recording__inner--progress').show();
+        });
+        $('.btn_rec--progress').on('click', function () {
+            $('#recording__inner--progress').hide();
+            $('#recording__inner--stopped').show();
+        });
+    </script>
+
+</body>
+
+</html>

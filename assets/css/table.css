@@ -1,0 +1,179 @@
+th,
+td {
+  vertical-align: middle !important;
+}
+
+.intron-table {
+  margin-bottom: 1.4rem;
+}
+
+.intron-table img {
+  max-width: 8rem;
+}
+
+.intron-table table {
+  background-color: var(--white);
+  border-radius: 2.5rem;
+}
+
+.intron-table table thead tr {
+  border: 3px solid var(--turquoise-light);
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+}
+
+.intron-table table th {
+  color: var(--dull);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: left;
+  padding: 1.5rem 0.8rem !important;
+  border: 0;
+  border-bottom: 1px solid #42cdca14;
+}
+
+.intron-table table th:first-child {
+  border-radius: 1.5rem 0 0 0;
+  border-left: 0;
+  border-top: 0;
+  padding-left: 3rem !important;
+}
+
+.intron-table table th:last-child {
+  border-radius: 0 1.5rem 0 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+.intron-table table td {
+  text-align: left;
+  padding: 1rem 0.5rem;
+  font-size: 1.4rem;
+  color: var(--dull-dark);
+  font-weight: 400;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+}
+
+.intron-table table td:first-child {
+  border-top: 0;
+  padding-left: 2.5rem;
+}
+
+.intron-table table td h5 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.intron-table table td.status {
+  font-weight: 500;
+}
+
+.intron-table table td.status-open {
+  color: var(--turquoise-dark);
+}
+
+.intron-table table td.status-active {
+  color: var(--primary);
+}
+
+.intron-table table td.status-inactive {
+  color: var(--turquoise-dark);
+}
+
+.intron-table table td.status-external {
+  color: var(--turquoise-dark);
+}
+
+.intron-table table td.status-partial {
+  color: var(--turquoise-dark);
+}
+
+.intron-table table td.status-done {
+  color: var(--turquoise-dark);
+}
+
+.intron-table table td.status-pending {
+  color: var(--orange-sharp);
+}
+
+.intron-table table tbody tr:hover {
+  background-color: #dcf2f5;
+}
+
+.intron-table table tbody tr:hover td {
+  color: var(--dull);
+  font-weight: 500;
+}
+
+.intron-table table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.intron-table table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 2.5rem;
+}
+
+.intron-table table tbody tr:last-child td:last-child {
+  border-radius: 0 0 2.5rem 0;
+}
+
+.intron-table td.bold,
+.intron-table td.bold span {
+  font-weight: 500;
+  color: var(--dull);
+}
+
+.intron-table td.action {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+
+.intron-table td.action button,
+.intron-table td.action a {
+  border: 1px solid var(--primary-lighter) !important;
+  border-radius: 0.4rem;
+  color: var(--primary-lighter);
+  font-size: 1.2rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+  padding: 0px 8px;
+}
+
+.intron-table td.action button i,
+.intron-table td.action a i {
+  font-size: 1.5rem;
+  padding-right: 0.8rem;
+}
+
+.intron-table td.action button:hover,
+.intron-table td.action a:hover {
+  background-color: var(--primary-lighter);
+  color: var(--white);
+}
+
+.intron-table td.action-bg-danger a,
+.intron-table td.action-bg-danger button {
+  border: 1px solid var(--orange) !important;
+  color: var(--orange);
+}
+
+.intron-table td.action-bg-danger a:hover,
+.intron-table td.action-bg-danger button:hover {
+  background-color: var(--orange);
+}
+
+.intron-table td.action-bg-turquoise a,
+.intron-table td.action-bg-turquoise button {
+  border: 1px solid var(--turquoise-dark) !important;
+  color: var(--turquoise-dark);
+}
+
+.intron-table td.action-bg-turquoise a:hover,
+.intron-table td.action-bg-turquoise button:hover {
+  background-color: var(--turquoise-dark);
+}
+/*# sourceMappingURL=table.css.map */

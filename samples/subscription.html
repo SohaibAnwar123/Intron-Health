@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Intron-Admin</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/styles.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="app">
+    <header class="">
+      <div class="header --z-index-1 mb-3">
+          <nav class="navbar position-relative navbar-expand-lg bg-white shadow-sm">
+              <a href="#" class="navbar-bar sidebar-toggle" id="sidebar-toggle"><img src="../img/toggle_bar.svg"
+                      alt="" /></a>
+              <a class="navbar-brand" href="#">
+                  <img src="../img/logo_mark_dark_alt_big.png" alt="" />
+              </a>
+
+              <div class="
+          top-search-wrap
+          position-relative
+          mr-auto
+          d-none d-md-block
+        ">
+                  <a href="javascript:void(0);" class="position-absolute h-100 d-flex" style="
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 2px;
+          ">
+                      <img src="../img/search-icon.png" alt="" />
+                  </a>
+                  <div class="form-group m-0 --border-radius-50">
+                      <input type="text" class="form-control --border-radius-50"
+                          style="padding-right: 60px; height: 40px !important" id="input-field"
+                          placeholder="Search.." />
+                  </div>
+              </div>
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav align-items-lg-center ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">
+                              <div class="d-flex align-items-center">
+                                  <img src="../img/philip.png" alt="" />
+                                  <p class="d-lg-none">Philip</p>
+                              </div>
+                          </a>
+                          <a href="javascript:void(0);" class="d-lg-none">
+                              <i class="fa fa-chevron-right"></i>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-15">
+                              <i class="fas fa-print mr-2"></i>
+                              Take a print
+                          </a>
+                          <a href="javascript:void(0);" class="icon d-lg-none">
+                              <i class="fa fa-chevron-right"></i>
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="javascript:void(0);" class="btn --small-btn --btn-orange --border-radius-15">
+                              <i class="fas fa-sign-out-alt mr-2"></i>
+                              Logout
+                          </a>
+                          <a href="javascript:void(0);" class="icon d-lg-none">
+                              <i class="fa fa-chevron-right"></i>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </header>
+  <aside class="sidebar shadow-sm --border-tr-radius-35">
+      <div class="fixed-aside-container">
+          <div class="fixed-aside-container__wrapper">
+              <ul class="sidebar-nav">
+                  <li>
+                      <a href="./index.html">
+                          <i class="fas fa-cog"></i>
+                          Index</a>
+                  </li>
+                  <li class="active">
+                      <a href="#adminSubmenu" data-toggle="collapse" aria-expanded="false"
+                          class="dropdown-toggle collapsed sidebar_dropdown">
+                          <i class="fas fa-user-lock"></i>
+                          Components
+                      </a>
+                      <ul class="list-unstyled collapse" id="adminSubmenu">
+                          <li><a href="./form.html">Forms</a></li>
+                          <li><a href="./dropdown.html">Drop Down</a></li>
+                          <li><a href="./tables.html">Tables</a></li>
+                          <li><a href="./stats_board.html">Stats Board</a></li>
+                          <li><a href="./checkout.html">Check Out</a></li>
+                          <li><a href="./payment_method.html">Payment Method</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#accountSubmenu" data-toggle="collapse" aria-expanded="false"
+                          class="dropdown-toggle collapsed sidebar_dropdown">
+                          <i class="far fa-user"></i>
+                          Accounts
+                      </a>
+                      <ul class="list-unstyled collapse" id="accountSubmenu">
+                          <li><a href="#">Accounts option</a></li>
+                          <li><a href="#">Accounts option</a></li>
+                          <li><a href="#">Accounts option</a></li>
+                      </ul>
+                  </li>
+
+                  <li>
+                      <a href="#">
+                          <i class="fas fa-user"></i>
+                          Profile
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="fas fa-envelope"></i>
+                          Inbox
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="fas fa-file-alt"></i>
+                          Work list
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="far fa-chart-bar"></i>
+                          Stats
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="fas fa-clock"></i>
+                          History
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="fas fa-star"></i>
+                          Feedback
+                      </a>
+                  </li>
+              </ul>
+              <a href="" class="btn nav_btn d-md-none">
+                  <img src="img/print_icon.png" alt="print" />
+                  Take a print
+              </a>
+              <a href="" class="btn nav_btn logout_btn d-md-none">
+                  <img src="img/logout_icon.png" alt="logout" />
+                  Logout
+              </a>
+          </div>
+      </div>
+  </aside>
+    <main>
+
+      <section class="section mt-5">
+        <div class="section__heading">
+          <h3 class="section__heading-title --fs-32 --fw-500 --f-poppins">
+            SubsCription
+          </h3>
+
+        </div>
+
+        <!-- subscription main section -->
+        <section class="subscription_wrapper">
+
+            <div class="subscrib_credentials">
+                <div class="row ">
+                    <div class="col-md-6 mb-md-0 mb-5">
+                        <div class="subscribBox shadow">
+                            <div class="subscribBox_head">
+                                <h1>Add Subscription</h1>
+                            </div>
+                            <div class="subscribBox_body">
+                                <div class="form-group">
+                                    <label for="input-field" class="mb-2">Complaints</label>
+                                    <input class="form-control --border-radius-5" placeholder="Cough">
+                                </div>
+                                <div>
+                                    <a class="btn btn-gradient btn-done  ">Done</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="subscribBox shadow">
+                            <div class="subscribBox_head">
+                                <h1>Purchase Subscription</h1>
+                            </div>
+                            <div class="subscribBox_body">
+                                <h4 class="availBalance">
+                                   <span>Available Blance</span><span class="d-md-inline d-none">:</span> $3756.00
+                                </h4>
+                                <div class="row">
+                                    <div class="col-6 pr_input">
+                                        <div class="form-group">
+                                            <label for="input-field" class="mb-2">Amount</label>
+                                            <input class="form-control --border-radius-5" placeholder="amount to pay">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 pl_input">
+                                        <div class="form-group">
+                                            <label for="input-field" class="mb-2">Total($)</label>
+                                            <input class="form-control --border-radius-5" placeholder="0.0">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <a class="btn btn-gradient btn-done ">Pay Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="section mt-5">
+                <div class="section__heading">
+                  <h3 class="section__heading-title --fs-32 --fw-500 --f-poppins">
+                    Subscription payments
+                  </h3>
+        
+                </div>
+
+
+            <div class="intron-table intron-table__payments intron-table__subscription">
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>
+                          <div>Date</div>
+                        </th>
+                        <th>
+                          <div>Amount</div>
+                        </th>
+                        <th>
+                          <div>Agent fee</div>
+                        </th>
+                        <th>
+                          <div>Subscription Paid</div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>04/19/2022</td>
+                        <td class="bold">$1500.0</td>
+                        <td>$0.0</td>
+                        <td>Cash</td>
+                      </tr>
+                      <tr>
+                        <td>04/19/2022</td>
+                        <td class="bold">$1500.0</td>
+                        <td>$0.0</td>
+                        <td>Cash</td>
+                      </tr>
+                      <tr>
+                        <td>04/19/2022</td>
+                        <td class="bold">$1500.0</td>
+                        <td>$0.0</td>
+                        <td>Cash</td>
+                      </tr>
+                      <tr>
+                        <td>04/19/2022</td>
+                        <td class="bold">$1500.0</td>
+                        <td>$0.0</td>
+                        <td>Cash</td>
+                      </tr>
+                    
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+        </section>
+
+
+      </section>
+
+      <!-- review model -->
+      <div class="modal" id="review_modal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Tell Us What You Think?</h4>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="rating_container">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="input-field" class="mb-2 w-100 text-center">How Can We Make Work Easier For You</label>
+                                <textarea class="form-control --border-radius-5" rows="4" id="comment" placeholder="Enter your Thought"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn btn-gradient btn_submit" data-dismiss="modal">Submit</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+     
+    </main>
+    <footer>
+      <p>footer</p>
+    </footer>
+  </div>
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
+  
+<!-- <script>
+    $(window).load(function(){        
+   $('#review_modal').modal('show');
+    }); 
+</script> -->
+<script type="text/javascript">
+    $(window).on('load', function() {
+        $('#review_modal').modal('show');
+    });
+</script>
+</body>
+
+
+
+</html>

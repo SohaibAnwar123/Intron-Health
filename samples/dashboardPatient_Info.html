@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Intron-Admin</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/styles.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+
+</head>
+
+<body>
+  <div id="app">
+    <header class="">
+      <div class="header --z-index-1 mb-3">
+        <nav class="navbar position-relative navbar-expand-lg bg-white shadow-sm">
+          <a href="#" class="navbar-bar sidebar-toggle" id="sidebar-toggle"><img src="../img/toggle_bar.svg"
+              alt="" /></a>
+          <a class="navbar-brand" href="#">
+            <img src="../img/logo_mark_dark_alt_big.png" alt="" />
+          </a>
+
+          <div class="
+                top-search-wrap
+                position-relative
+                mr-auto
+                d-none d-md-block
+              ">
+            <a href="javascript:void(0);" class="position-absolute h-100 d-flex" style="
+                  right: -10px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  padding: 2px;
+                ">
+              <img src="../img/search-icon.png" alt="" />
+            </a>
+            <div class="form-group m-0 --border-radius-50">
+              <input type="text" class="form-control --border-radius-50"
+                style="padding-right: 60px; height: 40px !important" id="input-field" placeholder="Search.." />
+            </div>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav align-items-lg-center ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="d-flex align-items-center">
+                    <img src="../img/philip.png" alt="" />
+                    <p class="d-lg-none">Philip</p>
+                  </div>
+                </a>
+                <a href="javascript:void(0);" class="d-lg-none">
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-15">
+                  <i class="fas fa-print mr-2"></i>
+                  Take a print
+                </a>
+                <a href="javascript:void(0);" class="icon d-lg-none">
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="btn --small-btn --btn-orange --border-radius-15">
+                  <i class="fas fa-sign-out-alt mr-2"></i>
+                  Logout
+                </a>
+                <a href="javascript:void(0);" class="icon d-lg-none">
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <aside class="sidebar shadow-sm --border-tr-radius-35">
+      <div class="fixed-aside-container">
+        <div class="fixed-aside-container__wrapper">
+          <ul class="sidebar-nav">
+            <li>
+              <a href="./index.html">
+                <i class="fas fa-cog"></i>
+                Index</a>
+            </li>
+            <li>
+              <a href="#adminSubmenu" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed sidebar_dropdown">
+                <i class="fas fa-user-lock"></i>
+                Components
+              </a>
+              <ul class="list-unstyled collapse" id="adminSubmenu">
+                <li><a href="./form.html">Forms</a></li>
+                <li><a href="./dropdown.html">Drop Down</a></li>
+                <li><a href="./tables.html">Tables</a></li>
+                <li><a href="./stats_board.html">Stats Board</a></li>
+                <li><a href="./checkout.html">Check Out</a></li>
+                <li><a href="./payment_method.html">Payment Method</a></li>
+                <li><a href="./admin_worklist.html">Worklist Admin</a></li>
+                <li>
+                  <a href="./dialog_and_floating_btn.html">Dialog & Floating BTN</a>
+                </li>
+                <li>
+                  <a href="./message.html">Message</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#accountSubmenu" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed sidebar_dropdown">
+                <i class="far fa-user"></i>
+                Accounts
+              </a>
+              <ul class="list-unstyled collapse" id="accountSubmenu">
+                <li><a href="#">Accounts option</a></li>
+                <li><a href="#">Accounts option</a></li>
+                <li><a href="#">Accounts option</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fas fa-user"></i>
+                Profile
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-envelope"></i>
+                Inbox
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-file-alt"></i>
+                Work list
+              </a>
+            </li>
+            <li class="active">
+              <a href="#Stats" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed sidebar_dropdown">
+                <i class="far fa-chart-bar"></i>
+                Stats
+              </a>
+              <ul class="list-unstyled collapse" id="Stats">
+                <li><a href="#">Admin</a></li>
+                <li><a href="#">Clinical</a></li>
+                <li><a href="#">Finance</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-clock"></i>
+                History
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-star"></i>
+                Feedback
+              </a>
+            </li>
+          </ul>
+          <a href="" class="btn nav_btn d-md-none">
+            <img src="img/print_icon.png" alt="print" />
+            Take a print
+          </a>
+          <a href="" class="btn nav_btn logout_btn d-md-none">
+            <img src="img/logout_icon.png" alt="logout" />
+            Logout
+          </a>
+        </div>
+      </div>
+    </aside>
+    <main class="dashbordTabs">
+      <div class="container">
+        <div class="mainDashInner">
+          <div class="dashboardTitle">
+            <h4>Dashboard</h4>
+            <div class="dashInner">
+              <a href=""><img src="../img/Home.svg" alt=""></a>
+              <a href="" class="dashLink">&#8226; Dashboard</a>
+              <a href="" class="dashLink">&#8226; Satats</a>
+            </div>
+          </div>
+          <div class="searchBar">
+            <input class="form-control" type="text" name="" id="" placeholder="Choose sites (All sites)"> <img
+              class="searIcon" src="../img/search-normal.svg" alt="">
+          </div>
+            <a class="reportBtn flex-Btn" href=""><img src="../img/Folder.svg" alt=""> View Reports</a>
+        </div>
+        <div class="PatientBox shadow">
+          <h2>Patient Information</h2>
+          <div class="MainInnerProf">
+            <div class="innerProfile">
+              <div class="PatientProfile">
+                <img src="../img/Patient_Profile.png" alt="">
+              </div>
+              <div class="contentProfile">
+                <h3>Huawa Ballo</h3>
+                <div class="detailProfile">
+                  <span>Age: <span class="BlackClr">23 Yr</span></span>
+                  <span>DOB: <span class="BlackClr">5 Aug 1993</span></span>
+                 
+                </div>
+                <p class="d-lg-none d-block">32yr old para 4+1 woman with previous CS, high parity,recent bleeding PV</p>
+                <ul class="InnerDateProfile d-flex align-items-center">
+                  <li class="DateProfile"><span class="BlackClr">LMP: </span> 1/5/2023</li>
+                  <li class="DateProfile"><span class="BlackClr">EDD: </span>1/3/2024</li>
+                  <li class="DateProfile"><span class="BlackClr">GA: </span>28 Wks</li>
+                </ul>
+                <p class="d-lg-block d-none">32yr old para 4+1 woman with previous CS, high parity, <br> recent bleeding PV</p>
+              </div>
+            </div>
+            <div class="InsureProvide">
+              <h5>Insurance Provider</h5>
+              <ul class="innerInsureIDs">
+                <li class="InsureIDs">
+                  <h6>Insurance provider:
+                  </h6>
+                  <span> AXA Mansard,</span>
+                </li>
+                <li class="InsureIDs">
+                  <h6>IEnrollee ID:
+                  </h6>
+                  <span>245LDQ4521</span>
+                </li>
+                <li class="InsureIDs">
+                  <h6>Enrollee ID:
+
+                  </h6>
+                  <span>245LDQ4521</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="MainInnerSub flex-between flex-wrap">
+            <div class="ProfileSubBox ProfileSubBox33 shadow">
+              <div class="InnerSubBox flex-between">
+              <div>
+                <h3>Primary Diagnosis</h3>
+                <span>Cystic Fibrosis with Liver <br> Complications</span>
+              </div>
+              <a class="NextArrow flex-Btn" href="">
+                <img src="../img/nexrArrow.svg" alt="">
+              </a>
+            </div>
+            </div>
+            <div class="ProfileSubBox ProfileSubBox33 shadow">
+              <div class="InnerSubBox flex-between">
+              <div>
+                <h3>Last Seen</h3>
+                <span>6/9/2022 in the Emergency <br> Department</span>
+              </div>
+              <a class="NextArrow flex-Btn" href="">
+                <img src="../img/nexrArrow.svg" alt="">
+              </a>
+            </div>
+            </div>
+            <div class="ProfileSubBox ProfileSubBox33 shadow">
+              <div class="InnerSubBox flex-between">
+              <div>
+                <h3>Comorbidities</h3>
+                <span>Liver Diseaase, Diabetes, <br> Hypertension</span>
+              </div>
+              <a class="NextArrow flex-Btn" href="">
+                <img src="../img/nexrArrow.svg" alt="">
+              </a>
+            </div>
+            </div>
+            <div class="ProfileSubBox ProfileSubBox33 shadow">
+              <div class="InnerSubBox flex-between">
+              <div>
+                <h3>Recent Labs</h3>
+                <span>Abdominpolevic Ultrasound <br> Urine M/C/S</span>
+              </div>
+              <a class="NextArrow flex-Btn" href="">
+                <img src="../img/nexrArrow.svg" alt="">
+              </a>
+            </div>
+            </div>
+            <div class="ProfileSubBox ProfileSubBox33 shadow">
+              <div class="InnerSubBox flex-between">
+              <div>
+                <h3>Allergies</h3>
+                <span>Peanuts, Pollen, Hot Water</span>
+              </div>
+              <a class="NextArrow flex-Btn" href="">
+                <img src="../img/nexrArrow.svg" alt="">
+              </a>
+            </div>
+            </div>
+            <div class="ProfileSubBox ProfileSubBox33 shadow">
+              <div class="InnerSubBox flex-between">
+              <div>
+                <h3>Current Medications</h3>
+                <span>Current Medications</span>
+              </div>
+              <a class="NextArrow flex-Btn" href="">
+                <img src="../img/nexrArrow.svg" alt="">
+              </a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="PatientBox Clinical shadow">
+          <h2>Clinical Note: Antenatal Clinic 5/5/23</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script>
+    // history tab end
+
+
+    $(function () {
+      // Open
+      $('[data-popup-open]').on('click', function (e) {
+        var targeted_popup_class = $(this).attr('data-popup-open');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+        e.preventDefault();
+      });
+
+      // Close
+      $('[data-popup-close]').on('click', function (e) {
+        var targeted_popup_class = $(this).attr('data-popup-close');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+        e.preventDefault();
+      });
+
+    });</script>
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+body {
+  background: var(--background);
+  font-family: $font-famliy;
+  line-height: 1.7;
+}
+
+label,
+p {
+  font-size: 1.45rem !important;
+}
+
+.btn,
+input.form-control,
+select.form-control {
+  font-size: 1.5rem;
+}

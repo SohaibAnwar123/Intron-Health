@@ -1,0 +1,80 @@
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+
+  .navbar-brand {
+    width: 134px;
+    padding-right: 1rem;
+    img {
+      width: 100%;
+    }
+  }
+
+  .nav-item {
+    margin-left: 30px;
+    p {
+      margin-left: 10px;
+    }
+  }
+
+  .sidebar-toggle {
+    display: none;
+    padding: 1rem;
+    padding-right: 1.5rem;
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+}
+.top-search-wrap {
+  width: 500px;
+  position: relative;
+  .form-group {
+    & input.form-control {
+      background-color: var(--nav-search-bar);
+      width: 100%;
+      height: calc(4rem + 2px);
+      font-family: "circular_book";
+      font-size: 1.6rem;
+      color: var(--nav-search-bar-text);
+      padding-left: 2rem;
+      padding-right: 4.5rem;
+      border-radius: 2rem;
+      &:focus {
+        color: var(--nav-search-bar-text);
+      }
+    }
+  }
+  a {
+    position: absolute;
+    display: flex;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2px;
+    height: 3.8rem;
+  }
+  &__card {
+    .form-group {
+      & input.form-control {
+        padding-right: 4.5rem;
+        background-color: var(--nav-search-bar);
+        height: calc(4.5rem + 2px);
+        border-radius: 0.8rem;
+        padding-left: 1.5rem;
+      }
+    }
+    a {
+      position: absolute;
+      display: flex;
+      right: -8px;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 2px;
+      height: 4rem;
+    }
+  }
+}

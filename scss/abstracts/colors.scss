@@ -1,0 +1,189 @@
+:root {
+  --primary: #{$--primary};
+  --primary-lighter: #{$--primary-lighter};
+  --primary-pink-lighter: #{$--primary-pink-lighter};
+  --primary-light: #{$--primary-light};
+  --secondary: #{$--secondary};
+  --primary-transparent: #{$--primary-transparent};
+  --secondary-transparent: #{$--secondary-transparent};
+  --orange: #{$--orange};
+  --orange-light: #{$--orange-light};
+  --orange-sharp: #{$--orange-sharp};
+  --turquoise: #{$--turquoise};
+  --turquoise-light: #{$--turquoise-light};
+  --turquoise-dark: #{$--turquoise-dark};
+  --btn-gradient-to-right: #{$--btn-gradient-to-right};
+  --btn-gradient-to-left: #{$--btn-gradient-to-left};
+  --btn-gradient-to-bottom: #{$--btn-gradient-to-bottom};
+  --link: #{$--link};
+  --link-dark: #{$--link-dark};
+  --border: #{$--border};
+  --text: #{$--text};
+  --background: #{$--background};
+  --light: #{$--light};
+  --pink-light: #{$--pink-light};
+  --link-light: #{$--link-light};
+  --purple: #{$--purple};
+  --shadow: #{$--shadow};
+  --orange-lighter: #{$--orange-lighter};
+  --dull: #{$--dull};
+  --dull-dark: #{$--dull-dark};
+  --yellow: #{$--yellow};
+  --red: #{$--red};
+  --zink: #{$--zink};
+  --white-opaque: #{$--white-opaque};
+  --nav-search-bar: #{$--nav-search-bar};
+  --nav-search-bar-text: #{$--nav-search-bar-text};
+  --light-grey: #{$--light-grey};
+}
+
+.--c-primary {
+  color: var(--primary) !important;
+}
+
+.--bg-primary {
+  background: var(--primary) !important;
+}
+
+.--c-primary-light {
+  color: var(--primary-light) !important;
+}
+
+.--bg-primary-light {
+  background: var(--primary-light) !important;
+}
+
+.--c-primary-lighter {
+  color: var(--primary-lighter) !important;
+}
+
+.--bg-primary-lighter {
+  background: var(--primary-lighter) !important;
+}
+
+.--c-primary-pink-lighter {
+  color: var(--primary-pink-lighter) !important;
+}
+
+.--bg-primary-pink-lighter {
+  background: var(--primary-pink-lighter) !important;
+}
+
+.--c-secondary {
+  color: var(--secondary) !important;
+}
+
+.--bg-secondary {
+  background: var(--secondary) !important;
+}
+
+.--c-orange {
+  color: var(--orange) !important;
+}
+
+.--bg-orange {
+  background: var(--orange) !important;
+}
+
+.--c-orange-light {
+  color: var(--orange-light) !important;
+}
+
+.--bg-orange-light {
+  background: var(--orange-light) !important;
+}
+
+.--c-orange-sharp {
+  color: var(--orange-sharp) !important;
+}
+
+.--bg-orange-sharp {
+  background: var(--orange-sharp) !important;
+}
+
+.--c-turquoise {
+  color: var(--turquoise) !important;
+}
+
+.--bg-turqoise {
+  background: var(--turquoise) !important;
+}
+
+.--c-turquoise-light {
+  color: var(--turquoise-light) !important;
+}
+
+.--bg-turqoise-light {
+  background: var(--turquoise-light) !important;
+}
+
+.--c-turquoise-dark {
+  color: var(--turquoise-dark) !important;
+}
+
+.--bg-turquoise-dark {
+  background: var(--turquoise-dark) !important;
+}
+
+.--btn-gradient-to-right {
+  background: var(--btn-gradient-to-right) !important;
+  color: white !important;
+}
+
+.--btn-gradient-to-left {
+  background: var(--btn-gradient-to-left) !important;
+  color: white !important;
+}
+
+.--btn-gradient-to-bottom {
+  background: var(--btn-gradient-to-bottom) !important;
+  color: white !important;
+}
+
+.--btn-orange {
+  background: var(--orange) !important;
+  color: white;
+}
+
+.--btn-turqoise {
+  background: var(--turquoise-dark) !important;
+  color: white;
+}
+
+.--c-link {
+  color: var(--link) !important;
+}
+
+.--border-gray {
+  border-color: var(--border) !important;
+}
+
+.--c-text {
+  color: var(--text) !important;
+}
+
+.--bg-light {
+  background: var(--light) !important;
+}
+
+.--c-dull {
+  color: var(--dull) !important;
+}
+.--bg-dull {
+  background: var(--dull) !important;
+}
+.--c-dull-dark {
+  color: var(--dull-dark) !important;
+}
+.--bg-dull-dark {
+  background: var(--dull-dark) !important;
+}
+.--c-white-opaque {
+  color: var(--white-opaque) !important;
+}
+.--bg-white-opaque {
+  background: var(--white-opaque) !important;
+}
+.--bg-white {
+  background: #fff !important;
+}

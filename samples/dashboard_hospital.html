@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Intron-Admin</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/styles.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="app">
+    <header class="">
+      <div class="header --z-index-1 mb-3">
+        <nav class="navbar position-relative navbar-expand-lg bg-white shadow-sm">
+          <a href="#" class="navbar-bar sidebar-toggle" id="sidebar-toggle"><img src="../img/toggle_bar.svg"
+              alt="" /></a>
+          <a class="navbar-brand" href="#">
+            <img src="../img/logo_mark_dark_alt_big.png" alt="" />
+          </a>
+
+          <div class="
+                top-search-wrap
+                position-relative
+                mr-auto
+                d-none d-md-block
+              ">
+            <a href="javascript:void(0);" class="position-absolute h-100 d-flex" style="
+                  right: -10px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  padding: 2px;
+                ">
+              <img src="../img/search-icon.png" alt="" />
+            </a>
+            <div class="form-group m-0 --border-radius-50">
+              <input type="text" class="form-control --border-radius-50"
+                style="padding-right: 60px; height: 40px !important" id="input-field" placeholder="Search.." />
+            </div>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav align-items-lg-center ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="d-flex align-items-center">
+                    <img src="../img/philip.png" alt="" />
+                    <p class="d-lg-none">Philip</p>
+                  </div>
+                </a>
+                <a href="javascript:void(0);" class="d-lg-none">
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-15">
+                  <i class="fas fa-print mr-2"></i>
+                  Take a print
+                </a>
+                <a href="javascript:void(0);" class="icon d-lg-none">
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="btn --small-btn --btn-orange --border-radius-15">
+                  <i class="fas fa-sign-out-alt mr-2"></i>
+                  Logout
+                </a>
+                <a href="javascript:void(0);" class="icon d-lg-none">
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <aside class="sidebar shadow-sm --border-tr-radius-35">
+      <div class="fixed-aside-container">
+        <div class="fixed-aside-container__wrapper">
+          <ul class="sidebar-nav">
+            <li>
+              <a href="./index.html">
+                <i class="fas fa-cog"></i>
+                Index</a>
+            </li>
+            <li>
+              <a href="#adminSubmenu" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed sidebar_dropdown">
+                <i class="fas fa-user-lock"></i>
+                Components
+              </a>
+              <ul class="list-unstyled collapse" id="adminSubmenu">
+                <li><a href="./form.html">Forms</a></li>
+                <li><a href="./dropdown.html">Drop Down</a></li>
+                <li><a href="./tables.html">Tables</a></li>
+                <li><a href="./stats_board.html">Stats Board</a></li>
+                <li><a href="./checkout.html">Check Out</a></li>
+                <li><a href="./payment_method.html">Payment Method</a></li>
+                <li><a href="./admin_worklist.html">Worklist Admin</a></li>
+                <li>
+                  <a href="./dialog_and_floating_btn.html">Dialog & Floating BTN</a>
+                </li>
+                <li>
+                  <a href="./message.html">Message</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#accountSubmenu" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed sidebar_dropdown">
+                <i class="far fa-user"></i>
+                Accounts
+              </a>
+              <ul class="list-unstyled collapse" id="accountSubmenu">
+                <li><a href="#">Accounts option</a></li>
+                <li><a href="#">Accounts option</a></li>
+                <li><a href="#">Accounts option</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fas fa-user"></i>
+                Profile
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-envelope"></i>
+                Inbox
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-file-alt"></i>
+                Work list
+              </a>
+            </li>
+            <li class="active">
+              <a href="#Stats" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed sidebar_dropdown">
+                <i class="far fa-chart-bar"></i>
+                Stats
+              </a>
+              <ul class="list-unstyled collapse" id="Stats">
+                <li><a href="#">Admin</a></li>
+                <li><a href="#">Clinical</a></li>
+                <li><a href="#">Finance</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-clock"></i>
+                History
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-star"></i>
+                Feedback
+              </a>
+            </li>
+          </ul>
+          <a href="" class="btn nav_btn d-md-none">
+            <img src="img/print_icon.png" alt="print" />
+            Take a print
+          </a>
+          <a href="" class="btn nav_btn logout_btn d-md-none">
+            <img src="img/logout_icon.png" alt="logout" />
+            Logout
+          </a>
+        </div>
+      </div>
+    </aside>
+    <main class="dashbordTabs">
+      <div class="container">
+        <div class="mainDashInner">
+          <div class="dashboardTitle">
+            <h4>Dashboard</h4>
+            <div class="dashInner">
+              <a href=""><img src="../img/Home.svg" alt=""></a>
+              <a href="" class="dashLink">&#8226; Dashboard</a>
+              <a href="" class="dashLink">&#8226; Satats</a>
+            </div>
+          </div>
+          <div class="searchBar">
+            <input class="form-control" type="text" name="" id="" placeholder="Choose sites (All sites)"> <img
+              class="searIcon" src="../img/search-normal.svg" alt="">
+          </div>
+            <a class="reportBtn flex-Btn" href=""><img src="../img/Folder.svg" alt=""> View Reports</a>
+        </div>
+        <div class="MianNav">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                aria-controls="nav-home" aria-selected="true">Admin</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                aria-controls="nav-profile" aria-selected="false">Clinical</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                aria-controls="nav-contact" aria-selected="false">Finance</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+              <div class="mainContInner">
+                <div class="navBox" style="grid-area: a;">
+                  <h5>Patient Utilization</h5>
+                  <div class="innerPatient">
+                    <div class="PtextInner">
+                      <div class="clientImg flex-Btn">
+                        <img src="../img/client1.png" alt="">
+                      </div>
+                      <div>
+                        <h6>Total Patient</h6>
+                        <p>32261</p>
+                      </div>
+                    </div>
+                    <a href="" class="nextArrow flex-Btn">
+                      <img src="../img/right_arrow.png" alt="">
+                    </a>
+                  </div>
+                  <div class="innerPatient">
+                    <div class="PtextInner">
+                      <div class="clientImg flex-Btn">
+                        <img src="../img/image2.png" alt="">
+                      </div>
+                      <div>
+                        <h6>Total Active Patient</h6>
+                        <p>32261</p>
+                      </div>
+                    </div>
+                    <a href="" class="nextArrow flex-Btn">
+                      <img src="../img/right_arrow.png" alt="">
+                    </a>
+                  </div>
+                  <div class="innerPatient">
+                    <div class="PtextInner">
+                      <div class="clientImg flex-Btn">
+                        <img src="../img/image3.png" alt="">
+                      </div>
+                      <div>
+                        <h6>Total In Patient</h6>
+                        <p>32261</p>
+                      </div>
+                    </div>
+                    <a href="" class="nextArrow flex-Btn">
+                      <img src="../img/right_arrow.png" alt="">
+                    </a>
+                  </div>
+                  <div class="innerPatient">
+                    <div class="PtextInner">
+                      <div class="clientImg flex-Btn">
+                        <img src="../img/image4.png" alt="">
+                      </div>
+                      <div>
+                        <h6>Total Out Patient</h6>
+                        <p>32261</p>
+                      </div>
+                    </div>
+                    <a href="" class="nextArrow flex-Btn">
+                      <img src="../img/right_arrow.png" alt="">
+                    </a>
+                  </div>
+                  <div class="innerPatient">
+                    <div class="PtextInner">
+                      <div class="clientImg flex-Btn">
+                        <img src="../img/image5.png" alt="">
+                      </div>
+                      <div>
+                        <h6>Total Emergency</h6>
+                        <p>32261</p>
+                      </div>
+                    </div>
+                    <a href="" class="nextArrow flex-Btn">
+                      <img src="../img/right_arrow.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="navBox" style="grid-area: b;">
+                  <h5>Patient Utilization</h5>
+                  <div class="mainPateinUltiInner">
+                    <div class="pateinUltiInner ">
+                      <div class="pateinUltiBox pateinUltiBox50">
+                        <img src="../img/PatientUser.png" alt="">
+                        <div class="d-lg-block d-flex align-items-center justify-content-between">
+                          <span>Infectious Diseases Cases</span>
+                          <h3>0</h3>
+                        </div>
+                      </div>
+                      <div class="pateinUltiBox pateinUltiBox50">
+                        <img src="../img/PatientUser.png" alt="">
+                        <div class="d-lg-block d-flex align-items-center justify-content-between">
+                          <span>Non Communicable Case</span>
+                          <h3>37</h3>
+                        </div>
+                      </div>
+                      <div class="pateinUltiBox pateinUltiBox50">
+                        <img src="../img/PatientUser.png" alt="">
+                        <div class="d-lg-block d-flex align-items-center justify-content-between">
+                          <span>Adverse Drugs Reaction</span>
+                          <h3>0</h3>
+                        </div>
+                      </div>
+                      <div class="pateinUltiBox pateinUltiBox50">
+                        <img src="../img/PatientUser.png" alt="">
+                        <div class="d-lg-block d-flex align-items-center justify-content-between">
+                          <span>Immunization vs Completed</span>
+                          <h3>37</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="navBox" style="grid-area: c;">
+                  <div class="flex-between">
+                    <h2>Total Activity</h2>
+                    <div class="innerDrop">
+                      <a href="" class="filterIcon flex-Btn">
+                        <img src="../img/Filter.png" alt="">
+                      </a>
+                      <div class="dropdown DropDownBtn">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Month
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">January</a>
+                          <a class="dropdown-item" href="#">February</a>
+                          <a class="dropdown-item" href="#">March</a>
+                          <a class="dropdown-item" href="#">April</a>
+                          <a class="dropdown-item" href="#">May</a>
+                          <a class="dropdown-item" href="#">June</a>
+                          <a class="dropdown-item" href="#">July</a>
+                          <a class="dropdown-item" href="#">August</a>
+                          <a class="dropdown-item" href="#">September</a>
+                          <a class="dropdown-item" href="#">October</a>
+                          <a class="dropdown-item" href="#">November</a>
+                          <a class="dropdown-item" href="#">December</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="graphContainer">
+                    <div class="totalActivity"></div>
+                  </div>
+                </div>
+                <div class="navBox" style="grid-area: d;">
+                  <h2>Top 5 Diagnoses</h2>
+                  <div class="graphContainer">
+                    <div class="topFive"></div>
+                    <ul class="diagnosesList">
+                      <li>
+                        <h6>Malaria</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>Essential Hypertension</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>Malaria</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>Type 2 Debates</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>Hypertension</h6>
+                        <span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navBox" style="grid-area: e;">
+                  <h2>Top 5 Diagnoses Children</h2>
+                  <div class="graphContainer">
+                    <div class="topFiveChild"></div>
+                    <ul class="diagnosesList">
+                      <li>
+                        <h6>Malaria</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>Actual Malaria Fever</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>?SEPSES</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>SEPSES</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>Actual Pharmacies'</h6>
+                        <span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navBox" style="grid-area: f;">
+                  <h2>Top 5 Diagnoses Women</h2>
+                  <div class="graphContainer">
+                    <div class="topFiveWomen"></div>
+                    <ul class="diagnosesList">
+                      <li>
+                        <h6>Malaria</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>Essential Hypertension</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>?SEPSES</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>TBC</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>PID</h6>
+                        <span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navBox" style="grid-area: g;">
+                  <h2>Top 5 Diagnoses Men</h2>
+                  <div class="graphContainer">
+                    <div class="topFiveMen"></div>
+                    <ul class="diagnosesList">
+                      <li>
+                        <h6>Malaria</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>Essential Hypertension</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>Malaria</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>Type 2 Debates</h6>
+                        <span></span>
+                      </li>
+                      <li>
+                        <h6>Hypertension</h6>
+                        <span></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navBox" style="grid-area: h;">
+                  <div class="flex-between">
+                    <h2>Utilization Trends (Users)</h2>
+                    <div class="innerDrop">
+                      <div class="dropdown DropDownBtn">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Logins
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Login 1</a>
+                          <a class="dropdown-item" href="#">Login 2</a>
+                          <a class="dropdown-item" href="#">Login 3</a>
+                        </div>
+                      </div>
+                      <div class="dropdown DropDownBtn">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Month
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">January</a>
+                          <a class="dropdown-item" href="#">February</a>
+                          <a class="dropdown-item" href="#">March</a>
+                          <a class="dropdown-item" href="#">April</a>
+                          <a class="dropdown-item" href="#">May</a>
+                          <a class="dropdown-item" href="#">June</a>
+                          <a class="dropdown-item" href="#">July</a>
+                          <a class="dropdown-item" href="#">August</a>
+                          <a class="dropdown-item" href="#">September</a>
+                          <a class="dropdown-item" href="#">October</a>
+                          <a class="dropdown-item" href="#">November</a>
+                          <a class="dropdown-item" href="#">December</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="graphContainer">
+                    <div class="UtilizationTrends"></div>
+                  </div>
+                </div>
+                <div class="navBox" style="grid-area: i;">
+                  <div class="flex-between">
+                    <h2>Total Activity</h2>
+                    <div class="innerDrop">
+                      <div class="dropdown DropDownBtn">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Laboratory
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Lab A</a>
+                          <a class="dropdown-item" href="#">Lab B</a>
+                          <a class="dropdown-item" href="#">Lab C</a>
+                        </div>
+                      </div>
+                      <div class="dropdown DropDownBtn">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Month
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">January</a>
+                          <a class="dropdown-item" href="#">February</a>
+                          <a class="dropdown-item" href="#">March</a>
+                          <a class="dropdown-item" href="#">April</a>
+                          <a class="dropdown-item" href="#">May</a>
+                          <a class="dropdown-item" href="#">June</a>
+                          <a class="dropdown-item" href="#">July</a>
+                          <a class="dropdown-item" href="#">August</a>
+                          <a class="dropdown-item" href="#">September</a>
+                          <a class="dropdown-item" href="#">October</a>
+                          <a class="dropdown-item" href="#">November</a>
+                          <a class="dropdown-item" href="#">December</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="graphContainer">
+                    <div class="totalActivitySmall"></div>
+                  </div>
+                </div>
+                <div class="navBox" style="grid-area: j;">
+                  <h2>Total Utilization (Order)</h2>
+                  <div class="graphContainer">
+                    <div class="totalUtilization"></div>
+                  </div>
+                </div>
+                <div class="navBox" style="grid-area: k;">
+                  <h2>Utilization Trends (Users)</h2>
+                  <ul class="TotalOrderInner">
+                    <li class="TotalOder">
+                      Total Order
+                    </li>
+                    <li class="TotalOder">
+                      81642
+                    </li>
+                  </ul>
+                  <ul class="TotalOrderInner">
+                    <li class="TotalOder">
+                      Total Laboratory
+                    </li>
+                    <li class="TotalOder">
+                      3389
+                    </li>
+                  </ul>
+                  <ul class="TotalOrderInner">
+                    <li class="TotalOder">
+                      Total Radiology
+                    </li>
+                    <li class="TotalOder">
+                      516
+                    </li>
+                  </ul>
+                  <ul class="TotalOrderInner">
+                    <li class="TotalOder">
+                      Total Drugs
+                    </li>
+                    <li class="TotalOder">
+                      4872
+                    </li>
+                  </ul>
+                  <ul class="TotalOrderInner">
+                    <li class="TotalOder">
+                      Total Procedures
+                    </li>
+                    <li class="TotalOder">
+                      571
+                    </li>
+                  </ul>
+                  <ul class="TotalOrderInner">
+                    <li class="TotalOder">
+                      Total Medical Supplies
+                    </li>
+                    <li class="TotalOder">
+                      58
+                    </li>
+                  </ul>
+                  <ul class="TotalOrderInner">
+                    <li class="TotalOder">
+                      Total VItals
+                    </li>
+                    <li class="TotalOder">
+                      52286
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="mainContInner Clinical">
+                <div class="navBox" style="grid-area: a;">
+                  <div class="flex-between flex-wrap innerStatis">
+                    <h2>Clinical Statistics</h2>
+                    <div class="innerDrop mobileClinic">
+                      <div class="dropdown DropDownBtn">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img class="calanderIcon" src="../img/Calendar.png" alt=""> Select Date Range
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Data A</a>
+                          <a class="dropdown-item" href="#">Data B</a>
+                          <a class="dropdown-item" href="#">Data C</a>
+                        </div>
+                      </div>
+                      <div class="dropdown DropDownBtn">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          All
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Data A</a>
+                          <a class="dropdown-item" href="#">Data B</a>
+                          <a class="dropdown-item" href="#">Data C</a>
+
+                        </div>
+                      </div>
+                      <a href="" class="filterBtn">Filter <img src="../img/FilterBtn.svg" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="dataRange">
+                      <p>At Date Range</p>
+                      <span></span>
+                    </div>
+                    <div class="graphContainer w-100">
+                      <div class="clinicalStat"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="navBox" style="grid-area: b;">
+                  <h2>Patient Age Distribution</h2>
+                  <div class="graphContainer">
+                    <div class="patientAge"></div>
+                  </div>
+                </div>
+                <div class="rateBoxes" style="grid-area: c;">
+                  <div class="navBox  rateBox">
+                    <h3>22</h3>
+                    <p>Under 5 mortality Rate</p>
+                  </div>
+                  <div class="navBox rateBox">
+                    <h3>12</h3>
+                    <p>Maternal mortality Rate</p>
+                  </div>
+                  <div class="navBox rateBox">
+                    <h3>30</h3>
+                    <p>Surgical Complications</p>
+                  </div>
+                  <div class="navBox rateBox">
+                    <h3>05</h3>
+                    <p>Nosocomial Infocations</p>
+                  </div>
+                </div>
+                <div class="navBox TopBox" style="grid-area: d;">
+                  <h2>Top Prescription Orders</h2>
+                  <ul>
+                    <li class="preOrder flex-between">
+                      <h5>Amlodipine 10 MG Tab</h5>
+                      <h6>213</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Tab Paracetamol</h5>
+                      <h6>201</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Tab Artemeter/Lumefan</h5>
+                      <h6>192</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>M2 - Tone</h5>
+                      <h6>191</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Clomid 50mg Tablet</h5>
+                      <h6>147</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Tab Losartan</h5>
+                      <h6>142</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Flagy 200 mg Tablet</h5>
+                      <h6>213</h6>
+                    </li>
+
+                  </ul>
+                </div>
+                <div class="navBox TopBox" style="grid-area: e;">
+                  <h2>Top Procedure Orders</h2>
+                  <ul>
+                    <li class="preOrder flex-between">
+                      <h5>Disposable</h5>
+                      <h6>81</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Nursing Care Daily</h5>
+                      <h6>72</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Doctor Review</h5>
+                      <h6>60</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Utility</h5>
+                      <h6>52</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Consultation</h5>
+                      <h6>31</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Bed Fee Semi Private</h5>
+                      <h6>31</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Incubator Use _ Day</h5>
+                      <h6>18</h6>
+                    </li>
+
+                  </ul>
+                </div>
+                <div class="navBox TopBox" style="grid-area: f;">
+                  <h2>Top Lab Orders</h2>
+                  <ul>
+                    <li class="preOrder flex-between">
+                      <h5>PCV</h5>
+                      <h6>684</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>FBC (Full Blood Count)</h5>
+                      <h6>585</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Lymphocytes</h5>
+                      <h6>496</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Monocytes</h5>
+                      <h6>496</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Eosinophills</h5>
+                      <h6>494</h6>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navBox TopBox" style="grid-area: g;">
+                  <h2>Top Radiology Orders</h2>
+                  <ul>
+                    <li class="preOrder flex-between">
+                      <h5>Transvagina Scan (TVS)</h5>
+                      <h6>211</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Abdominal Scan</h5>
+                      <h6>90</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Obstetric</h5>
+                      <h6>82</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Chest X-ray</h5>
+                      <h6>33</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Periapical Radiology</h5>
+                      <h6>17</h6>
+                    </li>
+
+                  </ul>
+                </div>
+                <div class="navBox TopBox" style="grid-area: h;">
+                  <h2>Top Country Utilization</h2>
+                  <ul>
+                    <li class="preOrder flex-between">
+                      <h5>Nigaria</h5>
+                      <h6>108976</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>NGN</h5>
+                      <h6>158</h6>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>South Africa</h5>
+                      <h6>43</h6>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navBox ReVenu" style="grid-area: i;">
+                  <h2>Revenue Status</h2>
+                  <div class="graphContainer">
+                    <div class="revenueStatus"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <div class="mainContInner Clinical financial">
+                <div class="navBox TopBox" style="grid-area: a;">
+                  <h2>Revenue By Services Categories</h2>
+                  <span>For the past 30 days</span>
+                  <ul>
+                    <li class="preOrder flex-between">
+                      <h5>Labs</h5>
+                      <div class="percentInner">
+                        <h6>0.00</h6>
+                        <div class="parcenNum flex-Btn">
+                          <img src="../img/Arrow - Up.png" alt="">
+                          00%
+                        </div>
+                      </div>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Radiology</h5>
+                      <div class="percentInner">
+                        <h6>0.00</h6>
+                        <div class="parcenNum flex-Btn">
+                          <img src="../img/Arrow - Up.png" alt="">
+                          00%
+                        </div>
+                      </div>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Pharmacy</h5>
+                      <div class="percentInner">
+                        <h6>0.00</h6>
+                        <div class="parcenNum flex-Btn">
+                          <img src="../img/Arrow - Up.png" alt="">
+                          00%
+                        </div>
+                      </div>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Procedures</h5>
+                      <div class="percentInner">
+                        <h6>0.00</h6>
+                        <div class="parcenNum flex-Btn">
+                          <img src="../img/Arrow - Up.png" alt="">
+                          00%
+                        </div>
+                      </div>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Medical Supplies</h5>
+                      <div class="percentInner">
+                        <h6>0.00</h6>
+                        <div class="parcenNum flex-Btn">
+                          <img src="../img/Arrow - Up.png" alt="">
+                          00%
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navBox TopBox" style="grid-area: b;">
+                  <h2>Revenue Status</h2>
+                  <span>For the past 30 days</span>
+                  <ul>
+                    <li class="preOrder flex-between">
+                      <h5>In Patient</h5>
+                      <div class="percentInner">
+                        <h6>0.00</h6>
+                        <div class="parcenNum flex-Btn">
+                          <img src="../img/Arrow - Up.png" alt="">
+                          00%
+                        </div>
+                      </div>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Out Patient</h5>
+                      <div class="percentInner">
+                        <h6>0.00</h6>
+                        <div class="parcenNum flex-Btn">
+                          <img src="../img/Arrow - Up.png" alt="">
+                          00%
+                        </div>
+                      </div>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Emergency</h5>
+                      <div class="percentInner">
+                        <h6>0.00</h6>
+                        <div class="parcenNum flex-Btn">
+                          <img src="../img/Arrow - Up.png" alt="">
+                          00%
+                        </div>
+                      </div>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Telehealth</h5>
+                      <div class="percentInner">
+                        <h6>0.00</h6>
+                        <div class="parcenNum flex-Btn">
+                          <img src="../img/Arrow - Up.png" alt="">
+                          00%
+                        </div>
+                      </div>
+                    </li>
+                    <li class="preOrder flex-between">
+                      <h5>Medical Supplies</h5>
+                      <div class="percentInner">
+                        <h6>0.00</h6>
+                        <div class="parcenNum flex-Btn">
+                          <img src="../img/Arrow - Up.png" alt="">
+                          00%
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+                <div class="navBox " style="grid-area: c;">
+                  <div class="flex-between flex-wrap">
+                    <h2>Revenue Trend</h2>
+
+                    <div class="innerParDay d-lg-flex d-none">
+                      <div class="yellowLine"></div>
+                      <h3>Revenue Trend Per Day</h3>
+                    </div>
+                    <div class="dropdown DropDownBtn">
+                      <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Day
+                      </a>
+
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Monday</a>
+                        <a class="dropdown-item" href="#">Tuesday</a>
+                        <a class="dropdown-item" href="#">Wednesday</a>
+                        <a class="dropdown-item" href="#">Thursday</a>
+                        <a class="dropdown-item" href="#">Friday</a>
+                        <a class="dropdown-item" href="#">Saturday</a>
+                        <a class="dropdown-item" href="#">Sunday</a>
+                      </div>
+                    </div>
+                    <div class="innerParDay d-lg-none d-flex">
+                      <div class="yellowLine"></div>
+                      <h3>Revenue Trend Per Day</h3>
+                    </div>
+                  </div>
+                  <div class="graphContainer">
+                    <div class="revenueTrend"></div>
+                  </div>
+                </div>
+                <div class="navBox " style="grid-area: d;">
+                  <div class="flex-between flex-wrap">
+                    <h2>Revenue Streams</h2>
+
+                    <div class="innerParDay d-lg-flex d-none">
+                      <div class="yellowLine"></div>
+                      <h3>Revenue Trend Per Day</h3>
+                    </div>
+                    <div class="innerDrop">
+                      <div class="dropdown DropDownBtn">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Day
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Monday</a>
+                          <a class="dropdown-item" href="#">Tuesday</a>
+                          <a class="dropdown-item" href="#">Wednesday</a>
+                          <a class="dropdown-item" href="#">Thursday</a>
+                          <a class="dropdown-item" href="#">Friday</a>
+                          <a class="dropdown-item" href="#">Saturday</a>
+                          <a class="dropdown-item" href="#">Sunday</a>
+                        </div>
+                      </div>
+                      <div class="dropdown DropDownBtn">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Laboratory
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Lab A</a>
+                          <a class="dropdown-item" href="#">Lab B</a>
+                          <a class="dropdown-item" href="#">Lab C</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="innerParDay d-lg-none d-flex">
+                      <div class="yellowLine"></div>
+                      <h3>Revenue Trend Per Day</h3>
+                    </div>
+                  </div>
+                  <div class="graphContainer">
+                    <div class="revenueStreams"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </div>
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="../js/graph.js"></script>
+  <script>
+
+  </script>
+
+</body>
+
+</html>

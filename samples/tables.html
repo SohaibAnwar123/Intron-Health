@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Intron-Admin</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="app">
+      <header class="">
+        <div class="header --z-index-1 mb-3">
+          <nav
+            class="navbar position-relative navbar-expand-lg bg-white shadow-sm"
+          >
+            <a href="#" class="navbar-bar sidebar-toggle" id="sidebar-toggle"
+              ><img src="../img/toggle_bar.svg" alt=""
+            /></a>
+            <a class="navbar-brand" href="#">
+              <img src="../img/logo_mark_dark_alt_big.png" alt="" />
+            </a>
+
+            <div
+              class="
+                top-search-wrap
+                position-relative
+                mr-auto
+                d-none d-md-block
+              "
+            >
+              <a
+                href="javascript:void(0);"
+                class="position-absolute h-100 d-flex"
+                style="
+                  right: -10px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  padding: 2px;
+                "
+              >
+                <img src="../img/search-icon.png" alt="" />
+              </a>
+              <div class="form-group m-0 --border-radius-50">
+                <input
+                  type="text"
+                  class="form-control --border-radius-50"
+                  style="padding-right: 60px; height: 40px !important"
+                  id="input-field"
+                  placeholder="Search.."
+                />
+              </div>
+            </div>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav align-items-lg-center ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <div class="d-flex align-items-center">
+                      <img src="../img/philip.png" alt="" />
+                      <p class="d-lg-none">Philip</p>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0);" class="d-lg-none">
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="javascript:void(0);"
+                    class="btn --small-btn --btn-turqoise --border-radius-15"
+                  >
+                    <i class="fas fa-print mr-2"></i>
+                    Take a print
+                  </a>
+                  <a href="javascript:void(0);" class="icon d-lg-none">
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="javascript:void(0);"
+                    class="btn --small-btn --btn-orange --border-radius-15"
+                  >
+                    <i class="fas fa-sign-out-alt mr-2"></i>
+                    Logout
+                  </a>
+                  <a href="javascript:void(0);" class="icon d-lg-none">
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <aside class="sidebar shadow-sm --border-tr-radius-35">
+        <div class="fixed-aside-container">
+          <div class="fixed-aside-container__wrapper">
+            <ul class="sidebar-nav">
+              <li>
+                <a href="./index.html">
+                  <i class="fas fa-cog"></i>
+                  Index</a
+                >
+              </li>
+              <li class="active">
+                <a
+                  href="#adminSubmenu"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  class="dropdown-toggle collapsed sidebar_dropdown"
+                >
+                  <i class="fas fa-user-lock"></i>
+                  Components
+                </a>
+                <ul class="list-unstyled collapse" id="adminSubmenu">
+                  <li><a href="./form.html">Forms</a></li>
+                  <li><a href="./dropdown.html">Drop Down</a></li>
+                  <li><a href="./tables.html">Tables</a></li>
+                  <li><a href="./stats_board.html">Stats Board</a></li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#accountSubmenu"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  class="dropdown-toggle collapsed sidebar_dropdown"
+                >
+                  <i class="far fa-user"></i>
+                  Accounts
+                </a>
+                <ul class="list-unstyled collapse" id="accountSubmenu">
+                  <li><a href="#">Accounts option</a></li>
+                  <li><a href="#">Accounts option</a></li>
+                  <li><a href="#">Accounts option</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">
+                  <i class="fas fa-user"></i>
+                  Profile
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-envelope"></i>
+                  Inbox
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-file-alt"></i>
+                  Work list
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="far fa-chart-bar"></i>
+                  Stats
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-clock"></i>
+                  History
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fas fa-star"></i>
+                  Feedback
+                </a>
+              </li>
+            </ul>
+            <a href="" class="btn nav_btn d-md-none">
+              <img src="img/print_icon.png" alt="print" />
+              Take a print
+            </a>
+            <a href="" class="btn nav_btn logout_btn d-md-none">
+              <img src="img/logout_icon.png" alt="logout" />
+              Logout
+            </a>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <section class="section">
+          <div class="section__heading">
+            <h2 class="section__heading-title">OPEN ORDERS</h2>
+            <h6 class="d-md-inline d-none --fs-16 section__heading-breadcrumb">
+              Patient Record/ <span>Patient Panel</span>
+            </h6>
+          </div>
+          <div class="intron-table">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Date</th>
+                    <th>Order Name</th>
+                    <th>Order Group</th>
+                    <th>Price</th>
+                    <th>Unit</th>
+                    <th>Consultant</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span>2801 </span>
+                    </td>
+                    <td><span>10/29/2019</span></td>
+
+                    <td class="intron-table__bold"><span>Chest Xray</span></td>
+                    <td><span>Xray</span></td>
+                    <td><span>3000.0</span></td>
+                    <td><span>Family Medicine</span></td>
+                    <td><span>Prof. Jasmine Ortiz</span></td>
+                    <td class="status-open"><span>Open</span></td>
+                    <td class="intron-table__action">
+                      <span>
+                        <a href="stats_checkout.html" class="addCart_btn btn">
+                          <i class="fas fa-cart-plus"></i> Add to Cart
+                        </a>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>2801 </span>
+                    </td>
+                    <td><span>09/21/2020</span></td>
+
+                    <td class="intron-table__bold"><span>Tylenol</span></td>
+                    <td><span>Xray</span></td>
+                    <td><span>400.0</span></td>
+                    <td><span>Family Medicine</span></td>
+                    <td><span>Dr. Beverly Porter</span></td>
+                    <td class="status-open"><span>Open</span></td>
+                    <td class="intron-table__action">
+                      <span>
+                        <a href="stats_checkout.html" class="btn">
+                          <i class="fas fa-cart-plus"></i> Add to Cart
+                        </a>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>2801 </span>
+                    </td>
+                    <td><span>10/29/2019</span></td>
+
+                    <td class="intron-table__bold"><span>Chest Xray</span></td>
+                    <td><span>Xray</span></td>
+                    <td><span>3000.0</span></td>
+                    <td><span>Family Medicine</span></td>
+                    <td><span>Prof. Jasmine Ortiz</span></td>
+                    <td class="status-open"><span>Open</span></td>
+                    <td class="intron-table__action">
+                      <span>
+                        <a href="stats_checkout.html" class="addCart_btn btn">
+                          <i class="fas fa-cart-plus"></i> Add to Cart
+                        </a>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>2801 </span>
+                    </td>
+                    <td><span>10/29/2019</span></td>
+
+                    <td class="intron-table__bold"><span>Chest Xray</span></td>
+                    <td><span>Xray</span></td>
+                    <td><span>3000.0</span></td>
+                    <td><span>Family Medicine</span></td>
+                    <td><span>Prof. Jasmine Ortiz</span></td>
+                    <td class="status-open"><span>Open</span></td>
+                    <td class="intron-table__action">
+                      <span>
+                        <a href="stats_checkout.html" class="addCart_btn btn">
+                          <i class="fas fa-cart-plus"></i> Add to Cart
+                        </a>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>2801 </span>
+                    </td>
+                    <td><span>09/21/2020</span></td>
+
+                    <td class="intron-table__bold"><span>Tylenol</span></td>
+                    <td><span>Xray</span></td>
+                    <td><span>400.0</span></td>
+                    <td><span>Family Medicine</span></td>
+                    <td><span>Dr. Beverly Porter</span></td>
+                    <td class="status-open"><span>Open</span></td>
+                    <td class="intron-table__action">
+                      <span>
+                        <a href="stats_checkout.html" class="addCart_btn btn">
+                          <i class="fas fa-cart-plus"></i> Add to Cart
+                        </a>
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <!-- completed orders -->
+        <section class="section">
+          <div class="section__heading">
+            <h2 class="section__heading-title">Completed</h2>
+          </div>
+          <div class="intron-table">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Date</th>
+                    <th>Patient ID</th>
+                    <th>Order Group</th>
+                    <th>Price</th>
+                    <th>Unit</th>
+                    <th>Order By</th>
+                    <th>Consultant</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span>2801 </span>
+                    </td>
+                    <td><span>10/29/2019</span></td>
+
+                    <td class="bold"><span>Chest Xray</span></td>
+                    <td><span>Xray</span></td>
+                    <td><span>3000.0</span></td>
+                    <td><span>Family Medicine</span></td>
+                    <td><span>Prof. Irabor</span></td>
+                    <td><span>Prof. Jasmine Ortiz</span></td>
+                    <td class="status status-open"><span> Done </span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>2801 </span>
+                    </td>
+                    <td><span>09/21/2020</span></td>
+
+                    <td class="bold"><span>Tylenol</span></td>
+                    <td><span>Xray</span></td>
+                    <td><span>400.0</span></td>
+                    <td><span>Family Medicine</span></td>
+                    <td><span>Prof. Irabor</span></td>
+                    <td><span>Dr. Beverly Porter</span></td>
+                    <td class="status status-open"><span> Done </span></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <span>2801 </span>
+                    </td>
+                    <td><span>10/29/2019</span></td>
+
+                    <td class="bold"><span>Chest Xray</span></td>
+                    <td><span>Xray</span></td>
+                    <td><span>3000.0</span></td>
+                    <td><span>Family Medicine</span></td>
+                    <td><span>Prof. Irabor</span></td>
+                    <td><span>Prof. Jasmine Ortiz</span></td>
+                    <td class="status status-open"><span> Done </span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span>2801 </span>
+                    </td>
+                    <td><span>09/21/2020</span></td>
+
+                    <td class="bold"><span>Tylenol</span></td>
+                    <td><span>Xray</span></td>
+                    <td><span>400.0</span></td>
+                    <td><span>Family Medicine</span></td>
+                    <td><span>Prof. Irabor</span></td>
+                    <td><span>Dr. Beverly Porter</span></td>
+                    <td class="status status-open"><span> Done </span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <!-- order table ends -->
+
+        <!-- pagination buttons -->
+        <div class="media align-items-center justify-content-end">
+          <div class="pagination">
+            <a href="" class="btn disabled"
+              ><i class="fas fa-angle-left"></i
+            ></a>
+          </div>
+
+          <div class="pagination ml-4">
+            <a href="" class="btn active"><i class="fas fa-angle-right"></i></a>
+          </div>
+        </div>
+      </main>
+      <footer><p>footer</p></footer>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

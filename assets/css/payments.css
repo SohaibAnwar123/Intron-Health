@@ -1,0 +1,942 @@
+.intron-table__payments.intron-table table th div {
+  width: fit-content;
+  text-align: center;
+}
+
+.intron-table__payments.intron-table table th div span {
+  display: block;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  font-weight: 300;
+}
+
+.intron-table__payments.intron-table table th:first-child {
+  padding-left: 2.5rem !important;
+}
+
+.intron-table__payments.intron-table table tbody td {
+  padding: 1rem 0.8rem;
+}
+
+.intron-table__payments.intron-table table tbody td:first-child {
+  padding-left: 2.5rem;
+}
+
+.intron-table__payments.intron-table table tbody tr:hover td {
+  color: var(--turquoise-dark);
+}
+
+.intron-table__payments.intron-table table tbody tr:hover td.bold {
+  font-weight: 600;
+}
+
+.payment_wrapper.complaients_wrapper #complaintTabContent .tab-pane {
+  background-color: transparent !important;
+}
+
+.payment_wrapper.complaients_wrapper .nav-item .nav-link {
+  padding: 1rem 1.5rem !important;
+  margin: 0px 8px 15px !important;
+}
+
+.payment_wrapper.complaients_wrapper .nav-item .nav-link.active, .payment_wrapper.complaients_wrapper .nav-item .nav-link:hover {
+  background-image: linear-gradient(to right, #47337B, #4A77AE) !important;
+}
+
+.payment_wrapper.complaients_wrapper .nav-item .nav-link i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment_wrapper.complaients_wrapper .nav-item .nav-link i polygon:hover,
+.payment_wrapper.complaients_wrapper .nav-item .nav-link i polygon:active,
+.payment_wrapper.complaients_wrapper .nav-item .nav-link i path:hover,
+.payment_wrapper.complaients_wrapper .nav-item .nav-link i path:active {
+  fill: var(--turquoise-dark) !important;
+}
+
+.summary_main {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 2.5rem;
+  padding: 3rem 0rem;
+  position: relative;
+  margin-bottom: 3.2rem;
+}
+
+.summary_main::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #42cdca1a;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.summary_main .summaryBox {
+  text-align: center;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.summary_main .summaryBox.box_mb {
+  margin-bottom: 12px;
+}
+
+.summary_main .summaryBox.box_mt {
+  margin-top: 12px;
+}
+
+.summary_main .summaryBox h4 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: var(--turquoise-dark);
+  margin-bottom: 1.7rem;
+}
+
+.summary_main .summaryBox h6 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--dull);
+  margin-bottom: 0rem;
+}
+
+.summary_main .summaryBox_middle {
+  position: relative;
+}
+
+.summary_main .summaryBox_middle h4 {
+  color: var(--link-dark);
+}
+
+.summary_main .summaryBox_middle::before {
+  content: " ";
+  width: 2px;
+  height: 150px;
+  background-color: #42cdca1a;
+  position: absolute;
+  left: -15px;
+  top: 0;
+}
+
+.summary_main .summaryBox_middle::after {
+  content: " ";
+  width: 2px;
+  height: 150px;
+  background-color: #42cdca1a;
+  position: absolute;
+  right: -15px;
+  top: 0;
+}
+
+.orange-sharp {
+  color: var(--orange-sharp) !important;
+}
+
+.patient_wrapper .patientBox {
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 3rem;
+}
+
+.patient_wrapper .patientBox_head {
+  padding: 2rem;
+  background-color: rgba(65, 204, 202, 0.2);
+  border-radius: 25px 25px 0px 0px;
+}
+
+.patient_wrapper .patientBox_head .patient_time {
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  background-color: var(--turquoise-dark);
+  border-radius: 8px;
+  width: fit-content;
+  margin-bottom: 1.2rem;
+}
+
+.patient_wrapper .patientBox_head .patient_name {
+  font-size: 2rem;
+  color: var(--dull);
+  font-weight: 500;
+}
+
+.patient_wrapper .patientBox_head .patient_name span {
+  font-weight: 300;
+  margin-left: 0.9rem;
+}
+
+.patient_wrapper .patientBox .patientBox_body {
+  border-radius: 0px 0px 25px 25px;
+  background-color: #FFFFFF;
+}
+
+.patient_wrapper .patientBox .patientBox_body .patient_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid rgba(64, 204, 202, 0.1);
+  padding: 2rem 2rem 1.2rem;
+}
+
+.patient_wrapper .patientBox .patientBox_body .patient_info h6 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--dull);
+}
+
+.patient_wrapper .patientBox .patientBox_body .patient_info p {
+  font-size: 1.6rem !important;
+  font-weight: 300;
+  color: var(--dull);
+}
+
+.patient_wrapper .patientBox .patientBox_body .amount_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem 1.2rem;
+  gap: 10px;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.patient_wrapper .patientBox .patientBox_body .amount_container h5 {
+  font-size: 1.8rem;
+  color: var(--turquoise-dark);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.patient_wrapper .patientBox .patientBox_body .amount_container h6 {
+  color: var(--dull);
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.patient_wrapper .patientBox .patientBox_body .amount_container .patient_share h5 {
+  color: var(--link-dark);
+}
+
+.patient_wrapper .patientBox .patientBox_body .amount_container .patient_intron h5 {
+  color: var(--orange-sharp);
+}
+
+.link-dark {
+  color: var(--link-dark);
+}
+
+.subscribBox {
+  border-radius: 2.5rem;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.subscribBox_head {
+  padding: 2.8rem 4.8rem 1.6rem;
+  border-bottom: 1px solid rgba(64, 219, 188, 0.1);
+}
+
+.subscribBox_head h1 {
+  font-size: 3.2rem;
+  line-height: 4.5rem;
+  font-weight: 600;
+  color: var(--dull);
+}
+
+.subscribBox_body {
+  padding: 4.5rem 4.8rem;
+}
+
+.subscribBox_body .pr_input {
+  padding-right: 16px;
+}
+
+.subscribBox_body .pl_input {
+  padding-left: 16px;
+}
+
+.subscribBox_body .availBalance {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--turquoise-dark);
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.subscribBox_body .form-group {
+  margin-bottom: 4.5rem;
+}
+
+.subscribBox_body .btn-done {
+  width: 14.5rem;
+  margin-left: auto;
+}
+
+.intron-table__subscription .table th {
+  width: 25%;
+}
+
+#review_modal .modal-dialog {
+  width: 100%;
+  max-width: 500px;
+}
+
+#review_modal .modal-dialog .modal-content {
+  padding: 2.5rem;
+}
+
+#review_modal .modal-dialog .modal-content .close {
+  margin-left: auto;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--dull-dark);
+  opacity: 1;
+}
+
+#review_modal .modal-dialog .modal-header {
+  justify-content: center;
+}
+
+#review_modal .modal-dialog .modal-header .modal-title {
+  font-size: 2.8rem;
+  line-height: 3rem;
+  color: var(--dull);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#review_modal .modal-dialog .rating_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#review_modal .modal-dialog .rating_container i {
+  color: var(--dull-dark);
+  font-size: 26px;
+}
+
+#review_modal .modal-dialog .modal-footer {
+  border: 0;
+}
+
+#review_modal .modal-dialog .modal-footer .btn_submit {
+  width: 150px;
+  height: 50px;
+  margin: 0px auto 0px;
+}
+
+.speak_toggle {
+  width: 120px;
+  height: 40px;
+  margin-left: 24px;
+  border-radius: 5.5rem;
+  font-size: 20px;
+  line-height: 30px;
+  background-image: linear-gradient(to right, #47337B, #4A77AE);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0px;
+}
+
+.speak_toggle .custom-control-input {
+  left: unset;
+  right: 20px;
+}
+
+.speak_toggle label {
+  color: #FFFFFF;
+  position: relative;
+  left: 0px;
+  font-size: 16px !important;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.speak_toggle label span {
+  padding-left: 14px;
+}
+
+.speak_toggle.custom-switch .custom-control-label::before {
+  width: 30px;
+  height: 18px;
+  border-radius: 14.5px;
+  left: 75px;
+  top: 10px;
+}
+
+.speak_toggle.custom-switch .custom-control-label::after {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  left: calc(76px + 0px);
+  top: calc(8.6px + 3px);
+}
+
+.speak_toggle.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #fff;
+  transform: translateX(13px);
+}
+
+.speaking_widget {
+  max-width: 667px;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  top: 93px;
+  right: 20px;
+  display: none;
+}
+
+.speaking_widget .widget_head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.speaking_widget .general_wrapp {
+  background-color: var(--link-dark);
+  padding: 13px 23px;
+  border-radius: 33px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(21, 24, 35, 0.7) !important;
+}
+
+.speaking_widget .wallet_wrapp {
+  color: var(--turquoise-dark);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.speaking_widget .widget_middle {
+  margin-bottom: 12px;
+}
+
+.speaking_widget .widget_middle .recording_wrapp {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-radius: 50px;
+  box-shadow: 0 0.5rem 1rem rgba(21, 24, 35, 0.7) !important;
+}
+
+.speaking_widget .widget_middle .recording_wrapp .record_time {
+  width: 86px;
+}
+
+.speaking_widget .widget_middle .recording_wrapp .record_time h6 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.speaking_widget .widget_middle .recording_wrapp .btn_record__speak {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: #FF5757;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.speaking_widget .widget_middle .recording_wrapp .btn_record__speak:hover {
+  background-color: rgba(255, 87, 87, 0.8);
+}
+
+.speaking_widget .widget_middle .recording_wrapp .pause_button__speak {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.speaking_widget .widget_middle .recording_wrapp .pause_button__speak:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.speaking_widget .widget_middle .recording_wrapp .record_player {
+  max-width: 209px;
+  display: flex;
+  align-items: center;
+}
+
+.speaking_widget .widget_middle .recording_wrapp .cta_btn {
+  width: 87px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  border-radius: 60px;
+  font-size: 13px;
+  line-height: 10px;
+  color: var(--zink);
+  border: 1px solid #40DBBC !important;
+}
+
+.speaking_widget .widget_middle .recording_wrapp .cta_btn:hover {
+  background-color: var(--zink);
+  color: #fff;
+}
+
+.speaking_widget .widget_middle .recording_wrapp .cta_btn:hover svg path {
+  stroke: #fff;
+}
+
+.speaking_widget .widget_middle .recording_wrapp .cta_btn:hover svg #Rectangle_129 {
+  stroke: #fff;
+}
+
+.speaking_widget .widget_middle .recording_wrapp .cta_btn.btn_clear {
+  color: var(--orange);
+  border: 1px solid var(--orange) !important;
+}
+
+.speaking_widget .widget_middle .recording_wrapp .cta_btn.btn_clear:hover {
+  background-color: var(--orange);
+  color: #fff;
+}
+
+.speaking_widget .widget_middle .recording_wrapp .cta_btn.btn_clear:hover svg path {
+  stroke: #fff;
+}
+
+.speaking_widget .widget_middle .recording_wrapp .cta_btn.btn_clear:hover svg #Rectangle_129 {
+  stroke: #fff;
+}
+
+.speaking_widget .widget_bottom {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.speaking_widget .widget_bottom .instruction_dropdown {
+  background-color: var(--link-dark);
+  box-shadow: 0 0.5rem 1rem rgba(21, 24, 35, 0.7) !important;
+  border-radius: 27px;
+  padding: 13px 0px;
+  width: 293px;
+  box-shadow: 0 0.5rem 1rem rgba(21, 24, 35, 0.7) !important;
+}
+
+.speaking_widget .widget_bottom .instruction_dropdown .dropdown-toggle {
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 23px;
+}
+
+.speaking_widget .widget_bottom .instruction_dropdown .dropdown-toggle:focus {
+  box-shadow: unset !important;
+  border-color: unset !important;
+}
+
+.speaking_widget .widget_bottom .instruction_dropdown .dropdown-menu {
+  position: relative !important;
+  width: 100% !important;
+  transform: unset !important;
+  background-color: transparent !important;
+  border: unset !important;
+  padding: 0px !important;
+}
+
+.speaking_widget .widget_bottom .instruction_dropdown .dropdown-menu .dropdown-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 14px 20px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.speaking_widget .widget_bottom .instruction_dropdown .dropdown-menu .dropdown-item:last-of-type {
+  border-radius: 0px 0px 27px 27px;
+}
+
+.speaking_widget .widget_bottom .instruction_dropdown .dropdown-menu .dropdown-item:hover {
+  color: var(--link-dark);
+}
+
+.speaking_widget .widget_bottom .instruction_dropdown.show {
+  padding-bottom: 0px;
+}
+
+.speaking_widget .widget_bottom .instruction_dropdown.show .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+
+.speaking_widget .widget_bottom .email_input {
+  width: 293px;
+  height: 55px;
+}
+
+.speaking_widget .widget_bottom .email_input .form-control {
+  box-shadow: 0 0.5rem 1rem rgba(21, 24, 35, 0.7) !important;
+  background-color: var(--link-dark);
+  height: 100%;
+  border-radius: 27px;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 16px;
+  border: unset;
+}
+
+.speaking_widget .widget_bottom .email_input .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.complaints_main {
+  position: relative;
+}
+
+#mobile_mic {
+  display: none;
+}
+
+#mobile_mic2 {
+  display: none;
+}
+
+@media (max-width: 1600px) {
+  .subscribBox {
+    border-radius: 2rem;
+  }
+  .subscribBox_head {
+    padding: 2.2rem 4rem 1.6rem;
+  }
+  .subscribBox_head h1 {
+    font-size: 2.6rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+  }
+  .subscribBox_body {
+    padding: 4rem 4rem;
+  }
+  .subscribBox_body .availBalance {
+    font-size: 2rem;
+    margin-bottom: 3.5rem;
+  }
+  .subscribBox_body .form-group {
+    margin-bottom: 3.5rem;
+  }
+  .subscribBox_body .btn-done {
+    width: 14.5rem;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1450px) {
+  .patient_wrapper .patientBox .patientBox_body .amount_container h5 {
+    font-size: 1.6rem;
+  }
+  .patient_wrapper .patientBox_head {
+    padding: 1.5rem;
+  }
+  .patient_wrapper .patientBox .patientBox_body .patient_info {
+    padding: 1.5rem 1.5rem 1.2rem;
+  }
+  .patient_wrapper .patientBox .patientBox_body .amount_container {
+    padding: 1.5rem 1.5rem 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .patient_wrapper .patientBox_head .patient_time {
+    margin-bottom: 1rem;
+  }
+  .patient_wrapper .patientBox_head .patient_name span {
+    margin-left: 0.2rem;
+  }
+  .patient_wrapper .patientBox_head .patient_name {
+    font-size: 1.6rem;
+  }
+  .patient_wrapper .patientBox .patientBox_body .amount_container h5 {
+    font-size: 1.3rem;
+  }
+  .patient_wrapper .patientBox .patientBox_body .amount_container h6 {
+    font-size: 1.3rem;
+  }
+  .patient_wrapper .patientBox .patientBox_body .patient_info h6 {
+    font-size: 1.3rem;
+  }
+  .patient_wrapper .patientBox .patientBox_body .patient_info p {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .speak_toggle__wrap {
+    width: 100%;
+    padding: 12px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    display: none;
+  }
+  .speak_mobile.speak_wrap_mobile {
+    display: flex !important;
+  }
+  .speak_toggle {
+    margin-left: 0px;
+  }
+  .navbar-toggler_speach {
+    display: none;
+  }
+  #mobile_mic {
+    display: block;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .payment_wrapper.complaients_wrapper .nav-item .nav-link {
+    padding: 0.4rem 0.8rem !important;
+    margin: 0px 4px 8px !important;
+  }
+  .intron-table__payments.intron-table table th {
+    padding: 0px 20px !important;
+  }
+  .intron-table__payments.intron-table table th div {
+    width: max-content;
+    text-align: center;
+  }
+  .intron-table__payments.intron-table table tbody td {
+    padding: 1rem 20px;
+  }
+  .summary_main .summaryBox h4 {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  .summary_main .summaryBox h6 {
+    font-size: 11px;
+  }
+  .summary_main .summaryBox {
+    text-align: center;
+    height: 68px;
+  }
+  .summary_main .summaryBox_middle::before {
+    height: 68px;
+  }
+  .summary_main .summaryBox_middle::after {
+    height: 68px;
+  }
+  .summary_main {
+    padding: 12px 0rem;
+    margin-bottom: 8px;
+  }
+  .patient_wrapper .patientBox .patientBox_body .amount_container {
+    text-align: center;
+  }
+  .patient_wrapper .patientBox {
+    border-radius: 15px;
+    margin-bottom: 8px;
+  }
+  .patient_wrapper .patientBox_head {
+    border-radius: 15px 15px 0px 0px;
+  }
+  .patient_wrapper .patientBox .patientBox_body {
+    border-radius: 0px 0px 15px 15px;
+  }
+  .patient_wrapper .patientBox_head .patient_time {
+    padding: 6px 13px;
+    font-size: 9px;
+  }
+  .patient_wrapper .patientBox_head .patient_name {
+    font-size: 15px;
+  }
+  .patient_wrapper .patientBox .patientBox_body .patient_info h6 {
+    font-size: 12px;
+  }
+  .patient_wrapper .patientBox .patientBox_body .patient_info p {
+    font-size: 12px !important;
+  }
+  .subscribBox_head {
+    padding: 14px 14px 7px;
+  }
+  .subscribBox_body {
+    padding: 16px 14px;
+  }
+  .subscribBox_body .pr_input {
+    padding-right: 7px;
+  }
+  .subscribBox_body .pl_input {
+    padding-left: 7px;
+  }
+  .subscribBox_body .availBalance {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
+  .subscribBox_body .availBalance span {
+    font-size: 14px;
+  }
+  .subscribBox_body .form-group {
+    margin-bottom: 24px;
+  }
+  .subscribBox_body .btn-done {
+    min-width: 87px;
+    max-width: 95px;
+  }
+  .intron-table__subscription .table th {
+    width: max-content;
+  }
+  #review_modal .modal-dialog {
+    width: 100%;
+    max-width: 343px;
+    margin: auto;
+  }
+  #review_modal .modal-dialog .modal-content {
+    padding: 24px 26px;
+  }
+  #review_modal .modal-dialog .modal-header .modal-title {
+    font-size: 18px;
+    line-height: 14px;
+    margin-bottom: 24px;
+  }
+  #review_modal .modal-dialog .modal-content .close {
+    position: absolute;
+    right: 12px;
+    top: 4px;
+  }
+  #review_modal .modal-dialog .rating_container {
+    margin-bottom: 23px;
+    gap: 8px;
+  }
+  #review_modal .modal-dialog .rating_container i {
+    font-size: 24px;
+  }
+  #review_modal .modal-dialog .modal-footer .btn_submit {
+    width: 151px;
+    height: 40px;
+    margin: 0px auto 0px;
+    font-size: 14px;
+  }
+  .speaking_widget .general_wrapp {
+    padding: 9px 18px;
+  }
+  .speaking_widget .general_wrapp {
+    padding: 9px 18px;
+    font-size: 11px;
+    line-height: 17px;
+    gap: 8px;
+  }
+  .speaking_widget .widget_middle .recording_wrapp {
+    gap: 8px;
+    justify-content: space-between;
+  }
+  .speaking_widget .widget_middle .recording_wrapp .btn_record__speak {
+    width: 25px;
+    height: 25px;
+  }
+  .speaking_widget .widget_middle .recording_wrapp .btn_record__speak svg {
+    width: 15px;
+  }
+  .speaking_widget .widget_middle .recording_wrapp .pause_button__speak {
+    width: 25px;
+    height: 25px;
+  }
+  .speaking_widget .widget_middle .recording_wrapp .pause_button__speak svg {
+    width: 10px;
+  }
+  .speaking_widget .widget_middle .recording_wrapp {
+    padding: 5px 9px;
+  }
+  .speaking_widget .widget_middle .recording_wrapp .record_time h6 {
+    font-size: 11px;
+  }
+  .speaking_widget .widget_middle .recording_wrapp .record_player {
+    max-width: 85px;
+  }
+  .speaking_widget .widget_middle .recording_wrapp .record_player img {
+    width: 100%;
+  }
+  .speaking_widget .widget_middle .recording_wrapp .cta_btn {
+    width: 53px;
+    height: 21px;
+    font-size: 8px;
+    padding: 0px;
+  }
+  .speaking_widget .widget_middle .recording_wrapp .cta_btn svg {
+    width: 11px !important;
+  }
+  .speaking_widget {
+    max-width: calc(100% - 30px);
+    right: 15px;
+    top: 76px;
+  }
+  .speaking_widget .widget_head {
+    margin-bottom: 8px;
+  }
+  .speaking_widget .widget_middle {
+    margin-bottom: 8px;
+  }
+  .speaking_widget .widget_bottom .instruction_dropdown {
+    padding: 7px 0px;
+    width: 161px;
+  }
+  .speaking_widget .widget_bottom .email_input {
+    width: 161px;
+    height: 40px;
+  }
+  .speaking_widget .widget_middle .recording_wrapp .record_time {
+    width: fit-content;
+  }
+  .speaking_widget .widget_bottom .instruction_dropdown .dropdown-toggle {
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    padding: 4px 12px;
+  }
+  .speaking_widget .widget_bottom .instruction_dropdown .dropdown-menu .dropdown-item {
+    padding: 7px 12px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .speaking_widget .widget_bottom .email_input .form-control {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .speak_toggle.custom-switch .custom-control-label::before {
+    width: 29px;
+    height: 18px;
+  }
+  .speak_toggle.custom-switch .custom-control-label::after {
+    width: 14px;
+    height: 14px;
+  }
+  .speak_toggle label span {
+    font-size: 16px !important;
+  }
+  #mobile_mic {
+    margin-right: 10px;
+  }
+}
+/*# sourceMappingURL=payments.css.map */

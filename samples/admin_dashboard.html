@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Intron-Admin</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="">
+            <div class="header --z-index-1 mb-3">
+                <nav class="navbar position-relative navbar-expand-lg bg-white shadow-sm">
+                    <a href="#" class="navbar-bar sidebar-toggle" id="sidebar-toggle"><img src="../img/toggle_bar.svg"
+                            alt="" /></a>
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/logo_mark_dark_alt_big.png" alt="" />
+                    </a>
+
+                    <div class="
+                top-search-wrap
+                position-relative
+                mr-auto
+                d-none d-md-block
+              ">
+                        <a href="javascript:void(0);" class="position-absolute h-100 d-flex" style="
+                  right: -10px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  padding: 2px;
+                ">
+                            <img src="../img/search-icon.png" alt="" />
+                        </a>
+                        <div class="form-group m-0 --border-radius-50">
+                            <input type="text" class="form-control --border-radius-50"
+                                style="padding-right: 60px; height: 40px !important" id="input-field"
+                                placeholder="Search.." />
+                        </div>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav align-items-lg-center ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../img/philip.png" alt="" />
+                                        <p class="d-lg-none">Philip</p>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" class="d-lg-none">
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-15">
+                                    <i class="fas fa-print mr-2"></i>
+                                    Take a print
+                                </a>
+                                <a href="javascript:void(0);" class="icon d-lg-none">
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0);" class="btn --small-btn --btn-orange --border-radius-15">
+                                    <i class="fas fa-sign-out-alt mr-2"></i>
+                                    Logout
+                                </a>
+                                <a href="javascript:void(0);" class="icon d-lg-none">
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <aside class="sidebar shadow-sm --border-tr-radius-35">
+            <div class="fixed-aside-container">
+                <div class="fixed-aside-container__wrapper">
+                    <ul class="sidebar-nav">
+                        <li>
+                            <a href="./index.html">
+                                <i class="fas fa-cog"></i>
+                                Index</a>
+                        </li>
+                        <li class="active">
+                            <a href="#adminSubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle collapsed sidebar_dropdown">
+                                <i class="fas fa-user-lock"></i>
+                                Components
+                            </a>
+                            <ul class="list-unstyled collapse" id="adminSubmenu">
+                                <li><a href="./form.html">Forms</a></li>
+                                <li><a href="./dropdown.html">Drop Down</a></li>
+                                <li><a href="./tables.html">Tables</a></li>
+                                <li><a href="./stats_board.html">Stats Board</a></li>
+                                <li><a href="./checkout.html">Check Out</a></li>
+                                <li><a href="./payment_method.html">Payment Method</a></li>
+                                <li><a href="./admin_worklist.html">Worklist Admin</a></li>
+                                <li>
+                                    <a href="./dialog_and_floating_btn.html">Dialog & Floating BTN</a>
+                                </li>
+                                <li>
+                                    <a href="./message.html">Message</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#accountSubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle collapsed sidebar_dropdown">
+                                <i class="far fa-user"></i>
+                                Accounts
+                            </a>
+                            <ul class="list-unstyled collapse" id="accountSubmenu">
+                                <li><a href="#">Accounts option</a></li>
+                                <li><a href="#">Accounts option</a></li>
+                                <li><a href="#">Accounts option</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-envelope"></i>
+                                Inbox
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-file-alt"></i>
+                                Work list
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-chart-bar"></i>
+                                Stats
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-clock"></i>
+                                History
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-star"></i>
+                                Feedback
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="" class="btn nav_btn d-md-none">
+                        <img src="img/print_icon.png" alt="print" />
+                        Take a print
+                    </a>
+                    <a href="" class="btn nav_btn logout_btn d-md-none">
+                        <img src="img/logout_icon.png" alt="logout" />
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <main>
+          
+            <section class="adminDashboard_wrapper">
+                <div class="row">
+                    <div class="col-xl-3 col-6 pr_xs_8">
+                        <div class="ticketWrapp">
+                            <div class="ticket_icon_wrapp">
+                                <img src="../img/openTicket.png" alt="openTicket.png" class="ticket_icon">
+                            </div>
+                            
+                            <div class="text-center">
+                                <h4 class="total_ticket">250</h4>
+                                <h6 class="ticket_status">Open Tickets</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-6 pl_xs_8">
+                        <div class="ticketWrapp primary_ticket">
+                            <div class="ticket_icon_wrapp">
+                            <img src="../img/closeTicket.png" alt="closeTicket.png" class="ticket_icon">
+                        </div>
+                            <div class="text-center">
+                                <h4 class="total_ticket">1.5K</h4>
+                                <h6 class="ticket_status">Closed Tickets</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-md-9 ">
+                        <div class="graphWrapper shadow">
+                            <div class="graphWrapper__head">
+                                <h6 class="graphTitle">Ticket Categories Counts</h6>
+                            </div>
+                            <div class="graphWrapper__body media  align-items-center flex-md-row flex-column">
+                                <div>
+                                    <img src="../img/circleGraph.png" alt="" class="circle_graph">
+                                </div>
+
+                                <div class="row w-100">
+                                    <div class="col-6 pl_xs_0">
+                                        <div class="noteCircle">
+                                            <div class="circle"></div>
+                                            <div class="noteCircle__text">User registration</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 pl-md-2 pr-md-3 pr-0">
+                                        <div class="noteCircle">
+                                            <div class="circle circle__linkDark"></div>
+                                            <div class="noteCircle__text">Upload</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 pl_xs_0">
+                                        <div class="noteCircle">
+                                            <div class="circle circle__orangeSharp"></div>
+                                            <div class="noteCircle__text">Account access</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 pl-md-2 pr-md-3 pr-0">
+                                        <div class="noteCircle">
+                                            <div class="circle circle__orangeprimary"></div>
+                                            <div class="noteCircle__text">drugs/pres<span class="d-md-inline d-none">criptions</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-6 pl_xs_0">
+                                        <div class="noteCircle">
+                                            <div class="circle circle__blue"></div>
+                                            <div class="noteCircle__text">Clinical note</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-6 pr-md-3 pr-0">
+                                        <div class="noteCircle">
+                                            <div class="circle circle__turquoiseDark"></div>
+                                            <div class="noteCircle__text">Payment</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-6 ">
+                        <div class="graphWrapper graphWrapper--response shadow">
+                            <div class="graphWrapper__head">
+                                <div>
+                                    <h6 class="graphTitle">Average Response Time</h6>
+                                </div>
+                                <div class="media align-items-center d-md-flex d-none">
+                                    <div class="noteCircle noteCircle--response mb-0">
+                                        <div class="circle circle__blue"></div>
+                                        <div class="noteCircle__text">Doctor</div>
+                                    </div>
+
+                                    <div class="noteCircle noteCircle--response mb-0">
+                                        <div class="circle circle__orangeSharp"></div>
+                                        <div class="noteCircle__text">Nurses</div>
+                                    </div>
+
+                                    <div class="noteCircle noteCircle--response mb-0">
+                                        <div class="circle circle__turquoiseDark"></div>
+                                        <div class="noteCircle__text">Technicians</div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div class="graphWrapper__body">
+                                <div>
+                                    <img src="../img/avergaeGraph.png" alt="avergaeGraph.png" class="w-100 mt-3">
+                                </div>
+
+                            </div>
+                            <div class="media align-items-center justify-content-center d-md-none mt-3">
+                                <div class="noteCircle noteCircle--response mb-0">
+                                    <div class="circle circle__blue"></div>
+                                    <div class="noteCircle__text">Doctor</div>
+                                </div>
+
+                                <div class="noteCircle noteCircle--response mb-0">
+                                    <div class="circle circle__orangeSharp"></div>
+                                    <div class="noteCircle__text">Nurses</div>
+                                </div>
+
+                                <div class="noteCircle noteCircle--response mb-0">
+                                    <div class="circle circle__turquoiseDark"></div>
+                                    <div class="noteCircle__text">Technicians</div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-6">
+                        <div class="graphWrapper graphWrapper--response shadow">
+                            <div class="graphWrapper__head">
+                                <div>
+                                    <h6 class="graphTitle">Ticket Resolution Time</h6>
+                                </div>
+                                <div>
+                                    <nav>
+                                        <div class="nav nav-tabs month_tabs" id="nav-tab" role="tablist">
+                                          <a class="nav-item nav-link active" id="nav-weeka-tab" data-toggle="tab" href="#nav-weeka" role="tab" aria-controls="nav-weeka" aria-selected="true">Week</a>
+                                          <a class="nav-item nav-link" id="nav-montha-tab" data-toggle="tab" href="#nav-montha" role="tab" aria-controls="nav-montha" aria-selected="false">Month</a>
+                                        </div>
+                                      </nav>
+                                </div>
+
+                            </div>
+                            <div class="graphWrapper__body">
+                                  <div class="tab-content" id="nav-tabContentgraph">
+                                    <div class="tab-pane fade show active" id="nav-weeka" role="tabpanel" aria-labelledby="nav-weeka-tab">
+                                        <h4 class="media align-items-center">Resolution Time <img src="../img/Info-cr-fr.png" alt="" class="ml-2"></h4>
+
+                                        <h5>Average:</h5>
+                                        <h6>3h 37min</h6>
+
+                                        <img src="../img/barGraph.png" alt="barGraph.png" class="resolution_graph">
+                                    </div>
+
+                                    <div class="tab-pane fade" id="nav-montha" role="tabpanel" aria-labelledby="nav-montha-tab">
+                                        <h4 class="media align-items-center">Resolution Time <img src="../img/Info-cr-fr.png" alt="" class="ml-2"></h4>
+
+                                        <h5>Average:</h5>
+                                        <h6>3h 37min</h6>
+
+                                        <img src="../img/barGraph.png" alt="barGraph.png" class="resolution_graph">
+                                    </div>
+                                  </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="admin_table__head">
+                            <div class="info_tabs">
+                                <ul class="list-group list-group-horizontal">
+                                    <li class="list-group-item">
+                                        <div class="noteCircle">
+                                        <div class="circle"></div>
+                                        <div class="noteCircle__text">User reg..</div>
+                                    </div></li>
+                                    <li class="list-group-item">
+                                        <div class="noteCircle">
+                                        <div class="circle  circle__turquoiseDark"></div>
+                                        <div class="noteCircle__text">Account access</div>
+                                    </div></li>
+                                    <li class="list-group-item"><div class="noteCircle">
+                                        <div class="circle circle__blue"></div>
+                                        <div class="noteCircle__text">Order creation</div>
+                                    </div></li>
+                                    <li class="list-group-item d-md-inline d-none">
+                                        <div class="noteCircle">
+                                        <div class="circle circle__orangeSharp"></div>
+                                        <div class="noteCircle__text">Payment</div>
+                                    </div></li>
+                                  </ul>
+
+                                  <a class="btn btn_add_info"><img src="../img/Path.png" alt=""></a>
+                            </div>
+                            <div class="pagination_box">
+                                <div>
+                                    <a href=""><img src="../img/ic_Refresh.png" alt=""></a>
+                                </div>
+                                <div class="nextPrev_cta">
+                                    <a href="" class="btn btn_prev_page"><i class="fas fa-chevron-left"></i></a>
+                                    <a href="" class="btn  btn_next_page"><i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="totalpage">
+                                    Show 1-20
+                                </div>
+                            </div>
+                        </div>
+
+                        <section class="admin_table_wrapp">
+                            <div class="intron-table intron-table--admin">
+                                <div class="table-responsive">
+                                  <table class="table table-borderless">
+                                    
+                                    <tbody>
+                                      <tr class="active_row">
+                                        <td><div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="tr1" name="example1">
+                                            <label class="custom-control-label" for="tr1"> <div class="username_img"> <img src="../img/Random_PP_table.png" alt=""> Any Carrol</div> </label>
+                                        </div></td>
+                                        <td> <div class="account_type"><img src="../img/RandomPP-star.png" alt=""> User registration</div></td>
+                                        <td class="user_desc">Hey Cak, Could you free now? Can you look and read the brief first before you take this job? Let me know if you...</td>
+                                        <td><img src="../img/ic_Attachment.png" alt="" class="attachment_img"></td>
+                                        <td>12:48PM</td>
+                                      </tr>
+                                      <tr>
+                                        <td><div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="tr2" name="example1">
+                                            <label class="custom-control-label" for="tr2"> <div class="username_img username_img--access"> <img src="../img/Random_PPt2.png" alt="">Artem Sazonov</div> </label>
+                                        </div></td>
+                                        <td> <div class="account_type"><img src="../img/RandomPP-star.png" alt="">Account access</div></td>
+                                        <td class="user_desc">Hey Cak, Could you free now? Can you look and read the brief first before you take this job? Let me know if you...</td>
+                                        <td></td>
+                                        <td>12:48PM</td>
+                                      </tr>
+                                      <tr>
+                                        <td><div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="tr3" name="example1">
+                                            <label class="custom-control-label" for="tr3"> <div class="username_img username_img--creation"> <img src="../img/Random_PP_table.png" alt="">Victor Pacheco</div> </label>
+                                        </div></td>
+                                        <td> <div class="account_type"><img src="../img/RandomPP-star.png" alt="">Order Creation</div></td>
+                                        <td class="user_desc">Hey Cak, Could you free now? Can you look and read the brief first before you take this job? Let me know if you...</td>
+                                        <td><img src="../img/ic_Attachment.png" alt="" class="attachment_img"></td>
+                                        <td>12:48PM</td>
+                                      </tr>
+                                      <tr class="active_row">
+                                        <td><div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="tr4" name="example1">
+                                            <label class="custom-control-label" for="tr4"> <div class="username_img username_img--drugs"> <img src="../img/Random_PPt2.png" alt="">Jaroslav Brabec</div> </label>
+                                        </div></td>
+                                        <td> <div class="account_type"><img src="../img/RandomPP-star.png" alt="">drugs/prescriptions</div></td>
+                                        <td class="user_desc">Hey Cak, Could you free now? Can you look and read the brief first before you take this job? Let me know if you...</td>
+                                        <td></td>
+                                        <td>12:48PM</td>
+                                      </tr>
+
+                                      <tr>
+                                        <td><div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="tr5" name="example1">
+                                            <label class="custom-control-label" for="tr5"> <div class="username_img username_img--clinical"> <img src="../img/Random_PP_table.png" alt="">Ren Xue</div> </label>
+                                        </div></td>
+                                        <td> <div class="account_type"><img src="../img/RandomPP-star.png" alt="">Clinical Note</div></td>
+                                        <td class="user_desc">Hey Cak, Could you free now? Can you look and read the brief first before you take this job? Let me know if you...</td>
+                                        <td><img src="../img/ic_Attachment.png" alt="" class="attachment_img"></td>
+                                        <td>12:48PM</td>
+                                      </tr>
+                                      <tr>
+                                        <td><div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="tr6" name="example1">
+                                            <label class="custom-control-label" for="tr6"> <div class="username_img username_img--clinical"> <img src="../img/Random_PPt2.png" alt="">JDushane Daniel</div> </label>
+                                        </div></td>
+                                        <td> <div class="account_type"><img src="../img/RandomPP-star.png" alt="">Clinical Note</div></td>
+                                        <td class="user_desc">Hey Cak, Could you free now? Can you look and read the brief first before you take this job? Let me know if you...</td>
+                                        <td></td>
+                                        <td>12:48PM</td>
+                                      </tr>
+                                      <tr>
+                                        <td><div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="tr7" name="example1">
+                                            <label class="custom-control-label" for="tr7"> <div class="username_img"> <img src="../img/Random_PP_table.png" alt=""> Any Carrol</div> </label>
+                                        </div></td>
+                                        <td> <div class="account_type"><img src="../img/RandomPP-star.png" alt=""> User registration</div></td>
+                                        <td class="user_desc">Hey Cak, Could you free now? Can you look and read the brief first before you take this job? Let me know if you...</td>
+                                        <td><img src="../img/ic_Attachment.png" alt="" class="attachment_img"></td>
+                                        <td>12:48PM</td>
+                                      </tr>
+                                      <tr>
+                                        <td><div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="tr8" name="example1">
+                                            <label class="custom-control-label" for="tr8"> <div class="username_img username_img--payment"> <img src="../img/Random_PPt2.png" alt="">Artem Sazonov</div> </label>
+                                        </div></td>
+                                        <td> <div class="account_type"><img src="../img/RandomPP-star.png" alt="">Payment</div></td>
+                                        <td class="user_desc">Hey Cak, Could you free now? Can you look and read the brief first before you take this job? Let me know if you...</td>
+                                        <td></td>
+                                        <td>12:48PM</td>
+                                      </tr>
+                                     
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                        </section>
+                       
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+        <footer>
+            <p>footer</p>
+        </footer>
+
+        <div class="modal fade" id="videoModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"></iframe>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js">
+    </script>
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>

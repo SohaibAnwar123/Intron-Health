@@ -1,0 +1,60 @@
+.print-box {
+    border: 1px solid #939494;
+    width: auto;
+}
+
+.print-box-row {
+    height: auto;
+}
+
+.print-box-row-x3 {
+min-height: 9em;
+}
+
+.print-box-row-x2 {
+    min-height: 6em;
+}
+
+.print-box-bottom {
+    border-bottom: 1px solid #939494;
+}
+
+.print-box-bottom {
+    border-bottom: 1px solid #939494;
+}
+.print-box-right {
+    border-right: 1px solid #939494;
+}
+.print-box-left {
+    border-left: 1px solid #939494;
+}
+
+@media print {
+    @page {
+        size: 297mm;
+    }
+    
+    aside {
+        display: none;
+    }
+    main {
+        width: auto;
+        transform: translate(-120px);
+    }
+    #profile {
+        display: none;
+    }
+    .has-search-right {
+        display: none;
+    }
+    .alert {
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}

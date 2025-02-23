@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Intron-Admin</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/styles.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="">
+            <div class="header --z-index-1 mb-3">
+                <nav class="navbar position-relative navbar-expand-lg bg-white shadow-sm">
+                    <a href="#" class="navbar-bar sidebar-toggle" id="sidebar-toggle"><img src="../img/toggle_bar.svg"
+                            alt="" /></a>
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/logo_mark_dark_alt_big.png" alt="" />
+                    </a>
+
+                    <div class="
+                top-search-wrap
+                position-relative
+                mr-auto
+                d-none d-md-block
+              ">
+                        <a href="javascript:void(0);" class="position-absolute h-100 d-flex" style="
+                  right: -10px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  padding: 2px;
+                ">
+                            <img src="../img/search-icon.png" alt="" />
+                        </a>
+                        <div class="form-group m-0 --border-radius-50">
+                            <input type="text" class="form-control --border-radius-50"
+                                style="padding-right: 60px; height: 40px !important" id="input-field"
+                                placeholder="Search.." />
+                        </div>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav align-items-lg-center ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../img/philip.png" alt="" />
+                                        <p class="d-lg-none">Philip</p>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" class="d-lg-none">
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-15">
+                                    <i class="fas fa-print mr-2"></i>
+                                    Take a print
+                                </a>
+                                <a href="javascript:void(0);" class="icon d-lg-none">
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0);" class="btn --small-btn --btn-orange --border-radius-15">
+                                    <i class="fas fa-sign-out-alt mr-2"></i>
+                                    Logout
+                                </a>
+                                <a href="javascript:void(0);" class="icon d-lg-none">
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <aside class="sidebar shadow-sm --border-tr-radius-35">
+            <div class="fixed-aside-container">
+                <div class="fixed-aside-container__wrapper">
+                    <ul class="sidebar-nav">
+                        <li>
+                            <a href="./index.html">
+                                <i class="fas fa-cog"></i>
+                                Index</a>
+                        </li>
+                        <li class="active">
+                            <a href="#adminSubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle collapsed sidebar_dropdown">
+                                <i class="fas fa-user-lock"></i>
+                                Components
+                            </a>
+                            <ul class="list-unstyled collapse" id="adminSubmenu">
+                                <li><a href="./form.html">Forms</a></li>
+                                <li><a href="./dropdown.html">Drop Down</a></li>
+                                <li><a href="./tables.html">Tables</a></li>
+                                <li><a href="./stats_board.html">Stats Board</a></li>
+                                <li><a href="./checkout.html">Check Out</a></li>
+                                <li><a href="./payment_method.html">Payment Method</a></li>
+                                <li><a href="./admin_worklist.html">Worklist Admin</a></li>
+                                <li>
+                                    <a href="./dialog_and_floating_btn.html">Dialog & Floating BTN</a>
+                                </li>
+                                <li>
+                                    <a href="./message.html">Message</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#accountSubmenu" data-toggle="collapse" aria-expanded="false"
+                                class="dropdown-toggle collapsed sidebar_dropdown">
+                                <i class="far fa-user"></i>
+                                Accounts
+                            </a>
+                            <ul class="list-unstyled collapse" id="accountSubmenu">
+                                <li><a href="#">Accounts option</a></li>
+                                <li><a href="#">Accounts option</a></li>
+                                <li><a href="#">Accounts option</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-envelope"></i>
+                                Inbox
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-file-alt"></i>
+                                Work list
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-chart-bar"></i>
+                                Stats
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-clock"></i>
+                                History
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-star"></i>
+                                Feedback
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="" class="btn nav_btn d-md-none">
+                        <img src="img/print_icon.png" alt="print" />
+                        Take a print
+                    </a>
+                    <a href="" class="btn nav_btn logout_btn d-md-none">
+                        <img src="img/logout_icon.png" alt="logout" />
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <section class="help_wrapper">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="help_wrapper__left">
+                            <div class="helpSearch">
+                                <div>
+                                    <h3 class="helpSearch__title">How can we help <br>
+                                        you Today</h3>
+                                </div>
+                                <div class="helpSearch__form">
+                                    <div class=" top-search-wrap position-relative mr-auto ">
+                                        <a href="javascript:void(0);"
+                                            class="position-absolute input_searchicon h-100 d-flex">
+                                            <img src="../img/search-icon.png" alt="">
+                                        </a>
+                                        <div class="form-group m-0 --border-radius-50">
+                                            <input type="text" class="form-control --border-radius-50" id="input-field"
+                                                placeholder="Search..">
+                                        </div>
+                                    </div>
+
+                                    <a href="" class="btn btn_chat">Chat</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <section>
+                            <div class="section__heading">
+                                <h2 class="section__heading-title2">Categories</h2>
+                            </div>
+
+                            <div class="categoryWrapper general_slider">
+                                <ul>
+                                    <li>
+                                        <div class="catBox shadow">
+                                            <div class="catBox__img"><img src="../img/Oval-1.png" alt="Oval-2.png">
+                                            </div>
+                                            <h6 class="catBox__title">Payment</h6>
+                                            <p class="catBox__desc">4/9 Completed</p>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="catBox shadow">
+                                            <div class="catBox__img"><img src="../img/Oval-2.png" alt="Oval-2.png">
+                                            </div>
+                                            <h6 class="catBox__title">Orders</h6>
+                                            <p class="catBox__desc">4/24 Completed</p>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="catBox shadow">
+                                            <div class="catBox__img"><img src="../img/Oval-3.png" alt="Oval-2.png">
+                                            </div>
+                                            <h6 class="catBox__title">Auth</h6>
+                                            <p class="catBox__desc">2/5 Completed</p>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="catBox shadow">
+                                            <div class="catBox__img"><img src="../img/Oval-4.png" alt="Oval-2.png">
+                                            </div>
+                                            <h6 class="catBox__title">Clinical note</h6>
+                                            <p class="catBox__desc">4/7 Completed</p>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="catBox shadow">
+                                            <div class="catBox__img"><img src="../img/Oval-5.png" alt="Oval-2.png">
+                                            </div>
+                                            <h6 class="catBox__title">Account access</h6>
+                                            <p class="catBox__desc">5/9 Completed</p>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <section class="popular_section mt-2">
+                            <div class="section__heading">
+                                <h2 class="section__heading-title2">Popular Tutorials & Articles</h2>
+                            </div>
+
+                            <section class="articleWrapper general_slider">
+                                <ul>
+                                    <li>
+                                        <div class="articleBox shadow">
+                                            <div class="articleBox__img">
+                                                <img src="../img/coffee_img.png" alt="coffee_img.png">
+                                                <div class="articleBox__img__overlay">
+                                                    <img src="../img/play_icon.png" alt="play_icon.png"
+                                                        class="overlay_icon">
+                                                </div>
+                                            </div>
+                                            <div class="articleBox__body">
+                                                <div class="articleBox__tag">Payment</div>
+                                                <h6 class="articleBox__title">Bitcoin x TRON Net Deposit Campaign</h6>
+                                            </div>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="articleBox shadow">
+                                            <div class="articleBox__img">
+                                                <img src="../img/article1.png" alt="article1.png">
+                                                <div class="articleBox__img__overlay">
+                                                    <img src="../img/article_icon.png" alt="article_icon.png"
+                                                        class="overlay_icon">
+                                                </div>
+                                            </div>
+                                            <div class="articleBox__body">
+                                                <div class="articleBox__tag">Payment</div>
+                                                <h6 class="articleBox__title">Bitcoin x TRON Net Deposit Campaign</h6>
+                                            </div>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="articleBox shadow">
+                                            <div class="articleBox__img">
+                                                <img src="../img/article3.png" alt="article3.png">
+                                                <div class="articleBox__img__overlay">
+                                                    <img src="../img/article_icon.png" alt="article_icon.png"
+                                                        class="overlay_icon">
+                                                </div>
+                                            </div>
+                                            <div class="articleBox__body">
+                                                <div class="articleBox__tag">Payment</div>
+                                                <h6 class="articleBox__title">Bitcoin x TRON Net Deposit Campaign</h6>
+                                            </div>
+                                            <a href="#" class="stretched-link"></a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+
+                            </section>
+
+                        </section>
+                    </div>
+
+                    <div class="col-md-4 d-md-inline d-none" >
+                        <div class="articleBox articleBox--video  shadow">
+                            <div class="articleBox__img" data-toggle="modal" data-target="#videoModal">
+                                <img src="../img/coffee_img.png" alt="coffee_img.png">
+                                <div class="articleBox__img__overlay"  >
+                                    <img src="../img/play_icon.png" alt="play_icon.png" class="overlay_icon">
+                                </div>
+                            </div>
+                            <div class="articleBox__body">
+                                <div class="articleBox__tag">Payment</div>
+                                <h6 class="articleBox__title">Bitcoin x TRON Net Deposit Campaign</h6>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                                    takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                                    consetetur sadipscing elitr</p>
+                            </div>
+                        </div>
+
+                        <div class="sideChat_box">
+                            <p>How can we help <br>
+                                you today?</p>
+                            <a href="" class="btn btn_chatside"> <span>Chat</span> <img src="../img/forward_arrow.png"
+                                    alt="forward_arrow.png"></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <section class="nurse_section">
+                            <div class="section__heading">
+                                <h2 class="section__heading-title2">Nurse <span>4/12 Completed</span></h2>
+                            </div>
+
+                            <div class="nurseBoxWrapper general_slider">
+                                <ul>
+                                    <li>
+                                        <div class="nurseBox shadow" data-toggle="modal" data-target="#videoModal">
+                                            <div class="nurseBox__img"><img src="../img/nurse_img.png" alt="nurse_img.png"></div>
+                                            <div class="nurseBox__overlay">
+                                                <img src="../img/play_icon.png" alt="play_icon.png" class="overlay_icon">
+                                                <p class="nurseBox__desc">How to clerk</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nurseBox shadow" data-toggle="modal" data-target="#videoModal">
+                                            <div class="nurseBox__img"><img src="../img/nurse_img.png" alt="nurse_img.png"></div>
+                                            <div class="nurseBox__overlay">
+                                                <img src="../img/play_icon.png" alt="play_icon.png" class="overlay_icon">
+                                                <p class="nurseBox__desc">How to take vitals</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nurseBox shadow" data-toggle="modal" data-target="#videoModal">
+                                            <div class="nurseBox__img"><img src="../img/nurse_img.png" alt="nurse_img.png"></div>
+                                            <div class="nurseBox__overlay">
+                                                <img src="../img/play_icon.png" alt="play_icon.png" class="overlay_icon">
+                                                <p class="nurseBox__desc">How to edit vitals</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nurseBox shadow" data-toggle="modal" data-target="#videoModal">
+                                            <div class="nurseBox__img"><img src="../img/nurse_img.png" alt="nurse_img.png"></div>
+                                            <div class="nurseBox__overlay">
+                                                <img src="../img/play_icon.png" alt="play_icon.png" class="overlay_icon">
+                                                <p class="nurseBox__desc">How nursing process</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nurseBox shadow" data-toggle="modal" data-target="#videoModal">
+                                            <div class="nurseBox__img"><img src="../img/nurse_img.png" alt="nurse_img.png"></div>
+                                            <div class="nurseBox__overlay">
+                                                <img src="../img/play_icon.png" alt="play_icon.png" class="overlay_icon">
+                                                <p class="nurseBox__desc">How to edit vitals</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="nurseBox shadow" data-toggle="modal" data-target="#videoModal">
+                                            <div class="nurseBox__img"><img src="../img/nurse_img.png" alt="nurse_img.png"></div>
+                                            <div class="nurseBox__overlay">
+                                                <img src="../img/play_icon.png" alt="play_icon.png" class="overlay_icon">
+                                                <p class="nurseBox__desc">How nursing process</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col-12 d-md-none">
+                        <a href="user_chat.html" class="btn btn_chat_agent">Chat with an Agent</a>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+        </main>
+        <footer>
+            <p>footer</p>
+        </footer>
+
+        <div class="modal fade" id="videoModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item"
+                        src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js">
+    </script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        $('.articleWrapper ul').slick({
+            dots: false,
+            infinite: false,
+            arrows: true,
+            swipeToSlide: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            draggable: true,
+            responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2.2,
+                        arrows: false
+
+                    }
+                },
+
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2.2,
+                        arrows: false
+
+                    }
+                },
+
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2.2,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 1.8,
+                        arrows: false
+                    }
+                }
+            ]
+        });
+
+        $('.categoryWrapper ul').slick({
+            dots: false,
+            infinite: false,
+            arrows: true,
+            swipeToSlide: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            draggable: true,
+            responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3.2,
+                        arrows: false
+
+                    }
+                },
+
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3.2,
+                        arrows: false
+
+                    }
+                },
+
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 4,
+                        arrows: false
+                    }
+                }
+            ]
+        });
+
+
+        // nursebox
+        $('.nurseBoxWrapper ul').slick({
+            dots: false,
+            infinite: false,
+            arrows: true,
+            swipeToSlide: true,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            draggable: true,
+            responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3.2,
+                        arrows: false
+
+                    }
+                },
+
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3.2,
+                        arrows: false
+
+                    }
+                },
+
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 2,
+                        arrows: false
+                    }
+                }
+            ]
+        });
+
+
+    </script>
+
+</body>
+
+</html>

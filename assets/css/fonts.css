@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "circular_book";
+  src: url("../../../fonts/Circular Book.ttf") format("truetype");
+}
+
+.--fw-100 {
+  font-weight: 100;
+}
+
+.--fw-200 {
+  font-weight: 200;
+}
+
+.--fw-300 {
+  font-weight: 300;
+}
+
+.--fw-400 {
+  font-weight: 400;
+}
+
+.--fw-500 {
+  font-weight: 500;
+}
+
+.--fw-600 {
+  font-weight: 600;
+}
+
+.--fw-700 {
+  font-weight: 700;
+}
+
+.--fw-800 {
+  font-weight: 800;
+}
+
+.--fw-900 {
+  font-weight: 900;
+}
+
+.--f-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.--f-circular_book {
+  font-size: "circular_book", sans-serif;
+}
+
+.--fs-8 {
+  font-size: 0.8rem !important;
+}
+
+.--fs-10 {
+  font-size: 1rem !important;
+}
+
+.--fs-12 {
+  font-size: 1.2rem !important;
+}
+
+.--fs-14 {
+  font-size: 1.4rem !important;
+}
+
+.--fs-16 {
+  font-size: 1.6rem !important;
+}
+
+.--fs-18 {
+  font-size: 1.8rem !important;
+}
+
+.--fs-20 {
+  font-size: 2rem !important;
+}
+
+.--fs-22 {
+  font-size: 2.2rem !important;
+}
+
+.--fs-24 {
+  font-size: 2.4rem !important;
+}
+
+.--fs-26 {
+  font-size: 2.6rem !important;
+}
+
+.--fs-28 {
+  font-size: 2.8rem !important;
+}
+
+.--fs-30 {
+  font-size: 3rem !important;
+}
+
+.--fs-32 {
+  font-size: 3.2rem !important;
+}
+
+.--fs-34 {
+  font-size: 3.4rem !important;
+}
+
+.--fs-36 {
+  font-size: 3.6rem !important;
+}
+
+.--fs-38 {
+  font-size: 3.8rem !important;
+}
+
+.--fs-40 {
+  font-size: 4rem !important;
+}
+
+.--fs-42 {
+  font-size: 4.2rem !important;
+}
+
+.--fs-44 {
+  font-size: 4.4rem !important;
+}
+
+.--fs-46 {
+  font-size: 4.6rem !important;
+}
+
+.--fs-48 {
+  font-size: 4.8rem !important;
+}
+
+.--fs-50 {
+  font-size: 5rem !important;
+}
+
+.--fs-52 {
+  font-size: 5.2rem !important;
+}
+
+.--fs-54 {
+  font-size: 5.4rem !important;
+}
+
+.--fs-56 {
+  font-size: 5.6rem !important;
+}
+
+.--fs-58 {
+  font-size: 5.8rem !important;
+}
+
+.--fs-60 {
+  font-size: 6rem !important;
+}
+
+.--fs-62 {
+  font-size: 6.2rem !important;
+}
+
+.--fs-64 {
+  font-size: 6.4rem !important;
+}
+
+.--fs-66 {
+  font-size: 6.6rem !important;
+}
+
+.--fs-68 {
+  font-size: 6.8rem !important;
+}
+
+.--fs-70 {
+  font-size: 7rem !important;
+}
+
+.--fs-72 {
+  font-size: 7.2rem !important;
+}
+
+.--fs-74 {
+  font-size: 7.4rem !important;
+}
+
+.--fs-76 {
+  font-size: 7.6rem !important;
+}
+
+.--fs-78 {
+  font-size: 7.8rem !important;
+}
+
+.--fs-80 {
+  font-size: 8rem !important;
+}
+
+.--fs-82 {
+  font-size: 8.2rem !important;
+}
+
+.--fs-84 {
+  font-size: 8.4rem !important;
+}
+
+.--fs-86 {
+  font-size: 8.6rem !important;
+}
+
+.--fs-88 {
+  font-size: 8.8rem !important;
+}
+
+.--fs-90 {
+  font-size: 9rem !important;
+}
+
+.--fs-92 {
+  font-size: 9.2rem !important;
+}
+
+.--fs-94 {
+  font-size: 9.4rem !important;
+}
+
+.--fs-96 {
+  font-size: 9.6rem !important;
+}
+
+.--fs-98 {
+  font-size: 9.8rem !important;
+}
+
+.--fs-100 {
+  font-size: 10rem !important;
+}
+
+/* line-heights */
+.--line-height-0 {
+  line-height: 0 !important;
+}
+
+.--line-height-10 {
+  line-height: 1rem !important;
+}
+
+.--line-height-15 {
+  line-height: 1.5rem !important;
+}
+
+.--line-height-20 {
+  line-height: 2rem !important;
+}
+
+.--line-height-25 {
+  line-height: 2.5rem !important;
+}
+
+.--line-height-30 {
+  line-height: 3rem !important;
+}
+
+.--line-height-35 {
+  line-height: 3.5rem !important;
+}
+
+.--line-height-40 {
+  line-height: 4rem !important;
+}
+
+.--line-height-45 {
+  line-height: 4.5rem !important;
+}
+
+.--line-height-50 {
+  line-height: 5rem !important;
+}
+
+.--line-height-55 {
+  line-height: 5.5rem !important;
+}
+
+.--line-height-60 {
+  line-height: 6rem !important;
+}
+
+.--line-height-65 {
+  line-height: 6.5rem !important;
+}
+
+.--line-height-70 {
+  line-height: 6rem !important;
+}
+
+.--line-height-75 {
+  line-height: 6.5rem !important;
+}
+
+.--line-height-80 {
+  line-height: 6rem !important;
+}
+
+.--line-height-85 {
+  line-height: 65rem !important;
+}
+
+.--line-height-90 {
+  line-height: 6rem !important;
+}
+
+.--line-height-95 {
+  line-height: 6.5rem !important;
+}
+
+.--line-height-100 {
+  line-height: 10rem !important;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*# sourceMappingURL=fonts.css.map */

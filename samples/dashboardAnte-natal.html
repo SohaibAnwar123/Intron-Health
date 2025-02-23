@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Intron-Admin</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/styles.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="app">
+    <header class="">
+      <div class="header --z-index-1 mb-3">
+        <nav class="navbar position-relative navbar-expand-lg bg-white shadow-sm">
+          <a href="#" class="navbar-bar sidebar-toggle" id="sidebar-toggle"><img src="../img/toggle_bar.svg"
+              alt="" /></a>
+          <a class="navbar-brand" href="#">
+            <img src="../img/logo_mark_dark_alt_big.png" alt="" />
+          </a>
+
+          <div class="
+                top-search-wrap
+                position-relative
+                mr-auto
+                d-none d-md-block
+              ">
+            <a href="javascript:void(0);" class="position-absolute h-100 d-flex" style="
+                  right: -10px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  padding: 2px;
+                ">
+              <img src="../img/search-icon.png" alt="" />
+            </a>
+            <div class="form-group m-0 --border-radius-50">
+              <input type="text" class="form-control --border-radius-50"
+                style="padding-right: 60px; height: 40px !important" id="input-field" placeholder="Search.." />
+            </div>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav align-items-lg-center ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="d-flex align-items-center">
+                    <img src="../img/philip.png" alt="" />
+                    <p class="d-lg-none">Philip</p>
+                  </div>
+                </a>
+                <a href="javascript:void(0);" class="d-lg-none">
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="btn --small-btn --btn-turqoise --border-radius-15">
+                  <i class="fas fa-print mr-2"></i>
+                  Take a print
+                </a>
+                <a href="javascript:void(0);" class="icon d-lg-none">
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="btn --small-btn --btn-orange --border-radius-15">
+                  <i class="fas fa-sign-out-alt mr-2"></i>
+                  Logout
+                </a>
+                <a href="javascript:void(0);" class="icon d-lg-none">
+                  <i class="fa fa-chevron-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <aside class="sidebar shadow-sm --border-tr-radius-35">
+      <div class="fixed-aside-container">
+        <div class="fixed-aside-container__wrapper">
+          <ul class="sidebar-nav">
+            <li>
+              <a href="./index.html">
+                <i class="fas fa-cog"></i>
+                Index</a>
+            </li>
+            <li>
+              <a href="#adminSubmenu" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed sidebar_dropdown">
+                <i class="fas fa-user-lock"></i>
+                Components
+              </a>
+              <ul class="list-unstyled collapse" id="adminSubmenu">
+                <li><a href="./form.html">Forms</a></li>
+                <li><a href="./dropdown.html">Drop Down</a></li>
+                <li><a href="./tables.html">Tables</a></li>
+                <li><a href="./stats_board.html">Stats Board</a></li>
+                <li><a href="./checkout.html">Check Out</a></li>
+                <li><a href="./payment_method.html">Payment Method</a></li>
+                <li><a href="./admin_worklist.html">Worklist Admin</a></li>
+                <li>
+                  <a href="./dialog_and_floating_btn.html">Dialog & Floating BTN</a>
+                </li>
+                <li>
+                  <a href="./message.html">Message</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#accountSubmenu" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed sidebar_dropdown">
+                <i class="far fa-user"></i>
+                Accounts
+              </a>
+              <ul class="list-unstyled collapse" id="accountSubmenu">
+                <li><a href="#">Accounts option</a></li>
+                <li><a href="#">Accounts option</a></li>
+                <li><a href="#">Accounts option</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fas fa-user"></i>
+                Profile
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-envelope"></i>
+                Inbox
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-file-alt"></i>
+                Work list
+              </a>
+            </li>
+            <li class="active">
+              <a href="#Stats" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle collapsed sidebar_dropdown">
+                <i class="far fa-chart-bar"></i>
+                Stats
+              </a>
+              <ul class="list-unstyled collapse" id="Stats">
+                <li><a href="#">Admin</a></li>
+                <li><a href="#">Clinical</a></li>
+                <li><a href="#">Finance</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-clock"></i>
+                History
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-star"></i>
+                Feedback
+              </a>
+            </li>
+          </ul>
+          <a href="" class="btn nav_btn d-md-none">
+            <img src="img/print_icon.png" alt="print" />
+            Take a print
+          </a>
+          <a href="" class="btn nav_btn logout_btn d-md-none">
+            <img src="img/logout_icon.png" alt="logout" />
+            Logout
+          </a>
+        </div>
+      </div>
+    </aside>
+    <main class="dashbordTabs">
+      <div class="container">
+        <div class="mainDashInner">
+          <div class="dashboardTitle">
+            <h4>Dashboard</h4>
+            <div class="dashInner">
+              <a href=""><img src="../img/Home.svg" alt=""></a>
+              <a href="" class="dashLink">&#8226; Dashboard</a>
+              <a href="" class="dashLink">&#8226; Satats</a>
+            </div>
+          </div>
+          <div class="searchBar">
+            <input class="form-control" type="text" name="" id="" placeholder="Choose sites (All sites)"> <img
+              class="searIcon" src="../img/search-normal.svg" alt="">
+          </div>
+          <a class="reportBtn flex-Btn" href=""><img src="../img/Folder.svg" alt=""> View Reports</a>
+        </div>
+        <div class="CirculBoxInner">
+          <div class="anteDashBox __Box" style="grid-area: a;">
+            <div class="d-flex align-items-center">
+              <h2>25,000</h2>
+              <span>(Patients)</span>
+            </div>
+            <h5>Antenatal Clinic Dashboard</h5>
+            <div class="antenatalProgress">
+              <div class="barOverflow">
+                <div class="bar"></div>
+              </div>
+              <span>98</span>
+            </div>
+            <div class="dangerIcon">
+              <img src="../img/Danger Triangle.svg" alt="">
+              <h6>Important Alerts</h6>
+            </div>
+            <ul>
+              <li>Bleeding PV : Patient 10 Tope Shock : Patient 9873
+              </li>
+              <li>
+                Chigozie Elevated BP : Patient 983
+              </li>
+              <li>
+                Hauwa Fal/ Traum : Patient 124
+              </li>
+              <li>
+                Bello Proteinuria : Patient 105</li>
+            </ul>
+          </div>
+          <div class="anteDashBox rateChart  flex-between anteDash50" style="grid-area: b;">
+            <div>
+              <h4>11006</h4>
+              <span>Abnormal Vitals</span>
+              <a href="" class="vistBtn">Vitals</a>
+            </div>
+            <div class="fullCircularProgress vital">
+              <svg>
+                <circle cx="40" cy="40" r="35"></circle>
+                <circle cx="40" cy="40" r="35" style="--percent: 98"></circle>
+              </svg>
+              <div class="number">
+                <h3>98<span>%</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="anteDashBox rateChart flex-between anteDash50" style="grid-area: c;">
+            <div>
+              <h4>1006</h4>
+              <span>Appointments</span>
+              <a href="" class="vistBtn">Appointments</a>
+            </div>
+            <div class="fullCircularProgress appoint">
+              <svg>
+                <circle cx="40" cy="40" r="35"></circle>
+                <circle cx="40" cy="40" r="35" style="--percent: 18"></circle>
+              </svg>
+              <div class="number">
+                <h3>18<span>%</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="anteDashBox rateChart  flex-between anteDash50" style="grid-area: d;">
+            <div>
+              <h4>6225</h4>
+              <span>High Risk Events</span>
+              <a href="" class="vistBtn bgBlues">Events</a>
+            </div>
+            <div class="fullCircularProgress event">
+              <svg>
+                <circle cx="40" cy="40" r="35"></circle>
+                <circle cx="40" cy="40" r="35" style="--percent: 98"></circle>
+              </svg>
+              <div class="number">
+                <h3>98<span>%</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="anteDashBox rateChart  flex-between anteDash50" style="grid-area: e;">
+            <div>
+              <h4>1006</h4>
+              <span>Investigations</span>
+              <a href="" class="vistBtn bgDaekBlue">Pending</a>
+            </div>
+            <div class="fullCircularProgress Investi">
+              <svg>
+                <circle cx="40" cy="40" r="35"></circle>
+                <circle cx="40" cy="40" r="35" style="--percent: 98"></circle>
+              </svg>
+              <div class="number">
+                <h3>98<span>%</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="anteDashBox rateChart  flex-between anteDash50" style="grid-area: f;">
+            <div>
+              <h4>3024</h4>
+              <span>Comorbidities</span>
+              <a href="" class="vistBtn bgDaekBlue">Chronic Conditions</a>
+            </div>
+            <div class="fullCircularProgress Comorbidities">
+              <svg>
+                <circle cx="40" cy="40" r="35"></circle>
+                <circle cx="40" cy="40" r="35" style="--percent: 71"></circle>
+              </svg>
+              <div class="number">
+                <h3>71<span>%</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="anteDashBox rateChart  flex-between anteDash50" style="grid-area: g;">
+            <div>
+              <h4>4521</h4>
+              <span>Med. & Immunizations</span>
+              <a href="" class="vistBtn bgBlues">Immunizations</a>
+            </div>
+            <div class="fullCircularProgress Immunizations">
+              <svg>
+                <circle cx="40" cy="40" r="35"></circle>
+                <circle cx="40" cy="40" r="35" style="--percent: 58"></circle>
+              </svg>
+              <div class="number">
+                <h3>58<span>%</span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="anteDashBox PatientListBox" style="grid-area: h;">
+            <div class="innerTexBtn flex-between">
+              <div>
+                <h2>Patient List (Ranked by list)</h2>
+                <span>Lorem Ipsum dummy text</span>
+              </div>
+              <ul class="MoreBtn">
+                <li class="FilterTex">Filters:</li>
+                <li><a class="AllBtn" href="">All</a></li>
+                <li><a class="HightBtn" href="">High Risk</a></li>
+                <li><a class="HightBtn" href="">Appointments</a></li>
+              </ul>
+
+            </div>
+            <ul class="InnerProfileBox ">
+              <li class="ProfileBox">
+                <div class="AvtarImg">
+                  <img src="../img/avtar1.png" alt="">
+                </div>
+                <div>
+                  <h6>Jhone Doe</h6>
+                  <span>Level 2</span>
+                </div>
+              </li>
+              <li class="ProfileBox">
+                <div class="AvtarImg">
+                  <img src="../img/avtar1.png" alt="">
+                </div>
+                <div>
+                  <h6>Jhone Doe</h6>
+                  <span>Level 2</span>
+                </div>
+              </li>
+              <li class="ProfileBox d-md-flex d-none">
+                <div class="AvtarImg">
+                  <img src="../img/avtar1.png" alt="">
+                </div>
+                <div>
+                  <h6>Jhone Doe</h6>
+                  <span>Level 2</span>
+                </div>
+              </li>
+              <li class="ProfileBox d-md-flex d-none">
+                <div class="AvtarImg">
+                  <img src="../img/Avtar2.png" alt="">
+                </div>
+                <div>
+                  <h6>Jhone Doe</h6>
+                  <span>Level 2</span>
+                </div>
+              </li>
+              <li class="ProfileBox d-md-flex d-none">
+                <div class="AvtarImg">
+                  <img src="../img/Avtar3.png" alt="">
+                </div>
+                <div>
+                  <h6>Jhone Doe</h6>
+                  <span>Level 2</span>
+                </div>
+              </li>
+              <li class="ProfileBox d-md-flex d-none">
+                <div class="AvtarImg">
+                  <img src="../img/Avtar4.png" alt="">
+                </div>
+                <div>
+                  <h6>Jhone Doe</h6>
+                  <span>Level 2</span>
+                </div>
+              </li>
+              <li class="ProfileBox d-md-flex d-none">
+                <div class="AvtarImg">
+                  <img src="../img/avtar5.png" alt="">
+                </div>
+                <div>
+                  <h6>Jhone Doe</h6>
+                  <span>Level 2</span>
+                </div>
+              </li>
+              <li class="ProfileBox d-md-flex d-none">
+                <div class="AvtarImg">
+                  <img src="../img/Avtar3.png" alt="">
+                </div>
+                <div>
+                  <h6>Jhone Doe</h6>
+                  <span>Level 2</span>
+                </div>
+              </li>
+              <li class="ProfileBox d-md-flex d-none">
+                <div class="AvtarImg">
+                  <img src="../img/avtar6.png" alt="">
+                </div>
+                <div>
+                  <h6>Jhone Doe</h6>
+                  <span>Level 2</span>
+                </div>
+              </li>
+              <li class="ProfileBox d-md-flex d-none">
+                <div class="AvtarImg">
+                  <img src="../img/avtar7.png" alt="">
+                </div>
+                <div>
+                  <h6>Jhone Doe</h6>
+                  <span>Level 2</span>
+                </div>
+              </li>
+              <li class="ProfileBox d-md-flex d-none">
+                <div class="AvtarImg">
+                  <img src="../img/avtar8.png" alt="">
+                </div>
+                <div>
+                  <h6>Jhone Doe</h6>
+                  <span>Level 2</span>
+                </div>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+  </div>
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="../js/graph.js"></script>
+</body>
+
+</html>

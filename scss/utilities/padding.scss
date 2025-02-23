@@ -1,0 +1,67 @@
+/* - padding 5rem */
+
+@for $i from 5 through 100 {
+  @if $i % 5 == 0 {
+    .--padding-#{$i} {
+      padding: #{$i/10}rem;
+    }
+
+    .--padding-vertical-#{$i} {
+      padding-top: #{$i/10}rem;
+      padding-bottom: #{$i/10}rem;
+    }
+
+    .--padding-horizontal-#{$i} {
+      padding-left: #{$i/10}rem;
+      padding-right: #{$i/10}rem;
+    }
+
+    .--padding-top-#{$i} {
+      padding-top: #{$i/10}rem;
+    }
+
+    .--padding-bottom-#{$i} {
+      padding-bottom: #{$i/10}rem;
+    }
+
+    .--padding-left-#{$i} {
+      padding-left: #{$i/10}rem;
+    }
+
+    .--padding-right-#{$i} {
+      padding-right: 0.5rem;
+    }
+  }
+}
+
+/* - half padding (7.5rem) */
+
+.--padding-half {
+  padding: 0.75rem;
+}
+
+.--padding-vertical-half {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.--padding-horizontal-half {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.--padding-top-half {
+  padding-top: 0.75rem;
+}
+
+.--padding-bottom-half {
+  padding-bottom: 0.75rem;
+}
+
+.--padding-left-half {
+  padding-left: 0.75rem;
+}
+
+.--padding-right-half {
+  padding-right: 0.75rem;
+}
